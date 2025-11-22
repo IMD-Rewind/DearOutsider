@@ -190,7 +190,7 @@ a { color: #fff; text-decoration: underlined; }
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55); /* layer to make text more visible */
+  background: rgba(0, 0, 0, 0.55) !important; /* layer to make text more visible */
 }
 
 /* Container for buttons */
