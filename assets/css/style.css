@@ -70,6 +70,7 @@ a { color: #fff; text-decoration: underlined; }
     position: fixed; /* keeps it visible on scroll */
     top: 0;           /* sticks to the top */
     width: 100%;      /* full width */
+    height: 10%;
     z-index: 1000;    /* above everything */
     box-shadow: 0 2px 10px rgba(0,0,0,0.5); /* optional subtle shadow */
 }
