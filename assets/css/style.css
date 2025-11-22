@@ -166,7 +166,7 @@ a { color: #fff; text-decoration: underlined; }
 
 /* HERO */
 .hero {
-  height: 100vh;
+  height: 120vh;
   background-image: url("../img/hero-bg.png");
   background-size: cover;
   background-position: center;
