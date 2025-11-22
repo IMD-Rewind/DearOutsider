@@ -190,7 +190,7 @@ a { color: #fff; text-decoration: underlined; }
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55); /* layer to make text more visible */
+  background: rgba(235, 232, 232, 0.55); /* layer to make text more visible */
 }
 
 /* Container for buttons */
@@ -199,7 +199,7 @@ a { color: #fff; text-decoration: underlined; }
     gap: 20px; /* space between buttons */
     flex-wrap: wrap; /* wrap on very small screens */
     justify-content: center;
-    color: #fff;
+    color: #fff !important;
 }
 
 .btn {
