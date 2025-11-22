@@ -1,16 +1,84 @@
+@font-face {
+    font-family: 'PrehistoricCaveman';
+    src: url("../fonts/PrehistoricCaveman.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body.dark-theme {
     background: #000;
     color: #eee;
-    font-family: "Inter", sans-serif;
 }
 
-a { color: #fff; text-decoration: none; }
+h1, h2 {
+    font-family: 'PrehistoricCaveman', sans-serif;
+    font-size: 1rem;
+}
+
+
+a { color: #fff; text-decoration: underlined; }
+
+.fire-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* clicks go through */
+    overflow: hidden;
+    z-index: 0; /* behind your content */
+}
+
+/* Single flame/beam style */
+.fire {
+    position: absolute;
+    bottom: 0;
+    width: 8px;
+    height: 40px;
+    background: radial-gradient(circle at 50% 50%, #fff100, #ff6c00, transparent);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; /* gives flame shape */
+    filter: blur(3px);
+    opacity: 0.8;
+    animation: floatFire 4s linear infinite, flicker 0.2s infinite alternate;
+}
+
+/* Animate the flames upward with sway and fade */
+@keyframes floatFire {
+    0% {
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translateX(30px) translateY(-50vh) rotate(20deg) scale(1.2);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(-20px) translateY(-100vh) rotate(-10deg) scale(1);
+        opacity: 0;
+    }
+}
+
 
 /* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 30px;
+    background: #050505;
+    position: fixed; /* keeps it visible on scroll */
+    top: 0;           /* sticks to the top */
+    width: 100%;      /* full width */
+    z-index: 1000;    /* above everything */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5); /* optional subtle shadow */
+}
+
+.logo {
+    color: #ffd36a;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
 .nav-menu {
@@ -19,13 +87,81 @@ a { color: #fff; text-decoration: none; }
     list-style: none;
 }
 
+.nav-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+    color: #ffd36a; /* brighter yellow when active or hovered */
+}
+
+/* Hamburger */
 .nav-toggle {
     display: none;
     flex-direction: column;
-    gap: 5px;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
     background: transparent;
     border: none;
+    cursor: pointer;
 }
+
+.nav-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #ffd36a;
+    border-radius: 2px;
+}
+
+/* Responsive menu for mobile */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 70px; /* height of navbar */
+        right: 0;
+        background: #111;
+        flex-direction: column;
+        width: 200px;
+        padding: 20px;
+        gap: 15px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        border-radius: 8px 0 0 8px;
+    }
+
+    .nav-menu.show {
+        transform: translateX(0);
+    }
+
+    .nav-menu li a {
+        font-size: 1rem;
+    }
+}
+
+/* Font Awesome icons in menu - optional hover glow for game aesthetic */
+.nav-menu li a i {
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-menu li a:hover i,
+.nav-menu li a.active i {
+    color: #fff100;
+    text-shadow: 0 0 8px #ffd36a;
+}
+
 
 /* HERO */
 .hero {
@@ -57,6 +193,13 @@ a { color: #fff; text-decoration: none; }
   background: rgba(0, 0, 0, 0.55); /* layer to make text more visible */
 }
 
+/* Container for buttons */
+.hero-buttons {
+    display: flex;
+    gap: 20px; /* space between buttons */
+    flex-wrap: wrap; /* wrap on very small screens */
+    justify-content: center;
+}
 
 .btn {
     display: inline-block;
@@ -72,6 +215,16 @@ a { color: #fff; text-decoration: none; }
 }
 
 /* SECTIONS */
+section {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+}
+.content-section h2 {
+    color: #ffd36a;
+    text-shadow: 0 0 10px rgba(255, 200, 80, 0.3);
+}
+
 .content-section {
     opacity: 0;
     padding: 120px 20px;
@@ -88,9 +241,107 @@ a { color: #fff; text-decoration: none; }
     margin: auto;
 }
 
+/* TEAM SECTION – Cave Aesthetic (Updated) */
+.team-section {
+  background: #050505;
+  padding: 70px 0;
+  color: #f2e2b2;
+}
+
+.team-section h2 {
+  color: #ffd36a;
+  text-shadow: 0 0 12px rgba(255, 180, 60, 0.3);
+}
+
+
+/* ================================
+   TEAM ROW — KEEP CARDS SIDE BY SIDE
+   ================================ */
+.team-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 35px;
+  flex-wrap: nowrap; /* prevents stacking */
+}
+
+
+/* ================================
+   TEAM CARDS — FIXED SIZE + GLOW
+   ================================ */
+.team-card {
+  background: #111;
+  border: none;
+  width: 250px;           /* FIXED SIZE — this is the correct width */
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;     /* required for glow */
+  box-shadow:
+    0 0 25px rgba(255, 140, 0, 0.15),
+    0 0 45px rgba(255, 100, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow:
+    0 0 35px rgba(255, 150, 0, 0.4),
+    0 0 80px rgba(255, 120, 0, 0.2);
+}
+
+
+/* Info box */
+.team-info {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 15px;
+  text-align: center;
+  color: #ffd36a;
+}
+
+.team-info h5 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+  color: #ffe7a1;
+}
+
+.team-info div {
+  font-size: 0.9rem;
+  color: #d6c8a0;
+}
+
+
+/* Orange glow behind card */
+.team-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 120%,
+    rgba(205, 108, 47, 0.792),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.team-card:hover::before {
+  opacity: 1;
+}
+
+
+
 /* FOOTER */
 .footer {
     text-align: center;
     padding: 40px 0;
     border-top: 1px solid #333;
+}
+
+.footer a {
+  text-decoration: underline;
+
+}
+
+.footer a::hover {
+  color:#ffd36a;
 }
