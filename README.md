@@ -1,12 +1,11 @@
 <div align="center">
+ 
+# **DEAR OUTSIDER**  
+#### *A Descent Into the Deer Cave*
 
 <!-- Replace the link below with your real image -->
 <img src="assets/img/hero-bg.png" width="900"/>
 
----
-
-# **DEAR OUTSIDER**  
-#### *A Descent Into the Deer Cave*
 
 A **Discovering Game Experience** created for the **DHDK** course <a href="https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue?codiceMateria=B5059&annoAccademico=2024&codiceCorso=9224&single=True&search=True" target="_blank">**Digital Heritage and Multimedia (2024/2025)**</a> taught by Professors <a href="https://www.unibo.it/sitoweb/chiara.tartarini">**Chiara Tartarini**</a> and <a href="https://www.unibo.it/sitoweb/sofia.pescarin/">**Sofia Pescarin**</a>.
 
