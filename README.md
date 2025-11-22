@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Replace the link below with your real image -->
-<img src="assets/img/poster.png" width="900"/>
+<img src="assets/img/hero-bg.png" width="900"/>
 
 ---
 
