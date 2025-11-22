@@ -75,9 +75,9 @@ a { color: #fff; text-decoration: underlined; }
 }
 
 .logo {
-    color: #ffd36a;
+    color: #ffffff;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
 }
 
@@ -199,6 +199,7 @@ a { color: #fff; text-decoration: underlined; }
     gap: 20px; /* space between buttons */
     flex-wrap: wrap; /* wrap on very small screens */
     justify-content: center;
+    color: #fff;
 }
 
 .btn {
@@ -207,6 +208,7 @@ a { color: #fff; text-decoration: underlined; }
     padding: 12px 24px;
     border: 1px solid #fff;
     transition: 0.3s;
+    
 }
 
 .btn:hover {
@@ -322,12 +324,29 @@ section {
   );
   opacity: 0;
   transition: opacity 0.3s ease;
+  pointer-events: none; /* <<< FIX — allows clicking elements above */
 }
 
 .team-card:hover::before {
   opacity: 1;
 }
 
+/*GITHUB ICON*/
+.github-icon {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.github-icon i {
+    font-size: 32px;
+    color: #ffd36a;
+    transition: 0.3s ease;
+}
+
+.github-icon i:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffd36a;
+}
 
 
 /* FOOTER */
