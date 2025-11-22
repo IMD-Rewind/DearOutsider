@@ -50,8 +50,7 @@ HTML5 / CSS3 / JavaScript |
 Bootstrap 5 |
 Custom animations (glow, flicker, embers) |
 Twine |
-Figma |
-Font: Prehistoric Caveman
+Figma
 
 ---
 <!--
