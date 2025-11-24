@@ -72,7 +72,7 @@ Figma
 
 ## 📜 **Design Philosophy**
 
-> *“A cave is not an empty space — it is a vessel for memory.”*  
+> *“A cave is not an empty space: it is a vessel for memory.”*  
 Our approach was to merge **archaeological aesthetics** with **modern interaction**, creating a digital descent that feels ancient, eerie, and alive.
 
 ---
