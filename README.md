@@ -35,7 +35,7 @@ Designed as an immersive *visually-driven journey*, the project blends:
  🖌️  Figma UI prototypes and concept art 
 
 ---
-<!--
+<!-- Figma Prototype / commit per aggiungere il progetto
 ## 🚀 **Play the Experience**
 
 👉 **Launch the project:**  
