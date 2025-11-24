@@ -98,14 +98,19 @@
                     <figure style="
                         flex: 1 1 350px;
                         max-width: 500px;
-                        height: 350px;
                         margin: 0;
-                        position: relative;
-                        overflow: hidden;">
-                        <img src="assets/img/Baia_di_Badisco.jpg" alt="Porto Badisco" style="width: 100%; height: auto; border-radius: 0px;">
-                            <figcaption style="font-size: 0.85rem; color: #ccc; margin-top: 8px;">
-                                Porto Badisco
-                            </figcaption>
+                        text-align: center;">
+                        
+                        <!-- Contenitore con altezza uguale alla mappa -->
+                        <div style="height: 350px; overflow: hidden;">
+                            <img src="assets/img/Baia_di_Badisco.jpg" 
+                                alt="Porto Badisco"
+                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 0;">
+                        </div>
+
+                        <figcaption style="font-size: 0.85rem; color: #ccc; margin-top: 8px;">
+                            Porto Badisco
+                        </figcaption>
                     </figure>
                 </div>
 
