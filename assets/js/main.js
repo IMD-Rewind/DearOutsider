@@ -66,16 +66,53 @@ const navLinks = document.querySelectorAll('.nav-menu li a');
 window.addEventListener('scroll', () => {
   let current = '';
   sections.forEach(section => {
-    const sectionTop = section.offsetTop - 80; // adjust offset for header height
-    if(window.pageYOffset >= sectionTop){
+    const sectionTop = section.offsetTop - 80;
+    if (window.pageYOffset >= sectionTop) {
       current = section.getAttribute('id');
     }
   });
 
   navLinks.forEach(link => {
     link.classList.remove('active');
-    if(link.getAttribute('href') === '#' + current){
+    if (link.getAttribute('href') === '#' + current) {
       link.classList.add('active');
     }
+  });
+});
+
+
+// ======= VIDEO GALLERY (FULLY FIXED) =======
+document.addEventListener('DOMContentLoaded', () => {
+  const mainVideo = document.getElementById("mainVideo");
+  const mainSource = mainVideo.querySelector("source"); // ← FIXED
+  const items = document.querySelectorAll(".video-item");
+
+  items.forEach(item => {
+    item.addEventListener("click", () => {
+
+      const newVideo = item.getAttribute("data-video");
+
+      // Ensure the current video stops (prevents transparency bug)
+      mainVideo.pause();
+
+      // Fade out
+      mainVideo.style.opacity = 0;
+
+      setTimeout(() => {
+        // Update the ONLY <source> tag
+        mainSource.src = newVideo;
+
+        // Reload and play
+        mainVideo.load();
+        mainVideo.play();
+
+        // Fade back in
+        mainVideo.style.opacity = 1;
+      }, 250);
+
+      // Update active thumbnail
+      document.querySelector(".video-item.active")?.classList.remove("active");
+      item.classList.add("active");
+    });
   });
 });

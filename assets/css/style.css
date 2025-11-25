@@ -14,6 +14,8 @@ body.dark-theme {
 h1, h2 {
     font-family: 'PrehistoricCaveman', sans-serif;
     font-size: 1rem;
+    color: #ffd36a !important;
+    text-shadow: 0 0 10px rgba(255, 200, 80, 0.3);
 }
 
 
@@ -59,6 +61,11 @@ a { color: #fff; text-decoration: underlined; }
     }
 }
 
+/*header*/
+.site-header {
+    padding: 0;
+    margin: 0;
+}
 
 /* NAVBAR */
 .navbar {
@@ -70,12 +77,16 @@ a { color: #fff; text-decoration: underlined; }
     position: fixed; /* keeps it visible on scroll */
     top: 0;           /* sticks to the top */
     width: 100%;      /* full width */
-    height: 10%;
+    height: auto;
+    min-height: 70px; /* stable, clean */
     z-index: 1000;    /* above everything */
     box-shadow: 0 2px 10px rgba(0,0,0,0.5); /* optional subtle shadow */
 }
 
 .logo {
+    line-height: 2;          /* keeps it exactly centered */
+    display: flex;
+    align-items: center;
     color: #ffffff;
     font-weight: bold;
     font-size: 1rem;
@@ -83,6 +94,7 @@ a { color: #fff; text-decoration: underlined; }
 }
 
 .nav-menu {
+    margin-top: 2%;
     display: flex;
     gap: 24px;
     list-style: none;
@@ -245,6 +257,81 @@ section {
     margin: auto;
 }
 
+/* Main video styling */
+
+/* Main video area */
+.main-video-wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+    background-color: #000 !important;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+#mainVideo {
+    width: 100%;
+    border-radius: 12px;
+    background-color: #000 !important;
+    mix-blend-mode: normal !important;
+    opacity: 1 !important;
+    display: block;
+    box-shadow: 0 0 20px #000;
+    transition: opacity 0.5s ease;
+}
+
+
+/* Video grid */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* Video item */
+.video-item {
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    background: #111;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.video-item:hover {
+    transform: scale(1.04);
+    border-color: #ffcc00;
+}
+
+/* Active selection */
+.video-item.active {
+    border-color: #ffcc00;
+    box-shadow: 0 0 12px #ffcc00aa;
+}
+
+/* Thumbnail images */
+.thumb-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Titles under thumbnails */
+.video-title {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #ffcc00;
+}
+
+/* Mobile improvements */
+@media (max-width: 768px) {
+    #mainVideo {
+        height: auto;
+    }
+}
+
+
 /* TEAM SECTION – Cave Aesthetic (Updated) */
 .team-section {
   background: #050505;
@@ -366,3 +453,52 @@ section {
 .footer a::hover {
   color:#ffd36a;
 }
+
+
+/*FORCING THESE STYLESSSS*/
+/* ===== Ensure video sits above flame layer but BELOW header ===== */
+.video-gallery {
+  position: relative;     /* already set, but keep to create local stacking context */
+  isolation: isolate;     /* prevents parent blending effects */
+  background: #000;       /* solid black background for gallery */
+  padding: 40px 0;
+  border-radius: 12px;
+  z-index: 5;             /* make sure gallery sits above flames (flames z-index:0) */
+}
+
+/* main video wrapper must be above flames but below header (header z-index:1000) */
+.main-video-wrapper {
+  position: relative;
+  z-index: 10;            /* small number, less than header (1000) so header stays on top */
+  background-color: #000; /* ensure hard black behind player */
+  border-radius: 12px;
+  padding: 10px;
+}
+
+/* ensure the <video> itself is above the flames */
+#mainVideo {
+  position: relative;
+  z-index: 11;
+  background-color: #000 !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #000;
+  transition: opacity 0.35s ease;
+}
+
+/* keep flames behind everything (you already had z-index:0) */
+.fire-container {
+  z-index: 0;
+}
+
+/* remove any accidental backdrop-filter on ancestors (defensive) */
+.video-gallery, .main-video-wrapper, #mainVideo {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  filter: none !important;
+}
+
+

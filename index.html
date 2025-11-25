@@ -115,13 +115,44 @@
 
     <!-- ===== Section 4 ===== -->
     <section id="section4" class="content-section">
-        <div class="container">
-            <div class="text-center mb-5">
-            <h2>Videos</h2>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cumque doloremque accusamus eos repudiandae reprehenderit quia quis molestiae debitis voluptate quidem est rerum, dolores nobis accusantium animi, hic mollitia. Porro?</p>
+    <div class="container video-gallery">
+    <div class="text-center mb-5">
+        <h2 class="video-heading">Videos</h2>
+    </div>
+
+    <!-- Main Video Display -->
+    <div class="main-video-wrapper">
+        <video id="mainVideo" controls>
+            <source src="assets/videos/dear-cave-discovery.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Thumbnails Grid -->
+    <div class="video-grid">
+        <!-- Example ITEMS — repeat for your 4–5 videos -->
+        <div class="video-item active" data-video="assets/videos/dear-cave-discovery.mp4">
+            <p class="video-title">Trailer</p>
         </div>
+
+        <div class="video-item" data-video="assets/videos/video2.mp4">
+            <img src="assets/thumbnails/video2-thumb.png" class="thumb-img" alt="">
+            <p class="video-title">Video Title 2</p>
+        </div>
+
+        <div class="video-item" data-video="assets/videos/video3.mp4">
+            <img src="assets/thumbnails/video3-thumb.png" class="thumb-img" alt="">
+            <p class="video-title">Video Title 3</p>
+        </div>
+
+        <div class="video-item" data-video="assets/videos/video4.mp4">
+            <img src="assets/thumbnails/video4-thumb.png" class="thumb-img" alt="">
+            <p class="video-title">Video Title 4</p>
+        </div>
+    </div>
+</div>
     </section>
+
+
 
     <!--TEAM SECTION-->
 <section class="team-section">
