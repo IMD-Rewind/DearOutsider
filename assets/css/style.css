@@ -71,34 +71,34 @@ a { color: #fff; text-decoration: underlined; }
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
+    align-items: center; /* vertical center */
+    padding: 0 30px;      /* top/bottom padding optional */
     background: #050505;
-    position: fixed; /* keeps it visible on scroll */
-    top: 0;           /* sticks to the top */
-    width: 100%;      /* full width */
-    height: auto;
-    min-height: 70px; /* stable, clean */
-    z-index: 1000;    /* above everything */
-    box-shadow: 0 2px 10px rgba(0,0,0,0.5); /* optional subtle shadow */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 70px;     /* ensures a stable navbar height */
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
 .logo {
-    line-height: 2;          /* keeps it exactly centered */
     display: flex;
-    align-items: center;
-    color: #ffffff;
+    align-items: center;   /* vertical center */
+    color: #fff;
     font-weight: bold;
     font-size: 1rem;
     text-decoration: none;
 }
 
 .nav-menu {
-    margin-top: 2%;
     display: flex;
     gap: 24px;
     list-style: none;
+    margin: 0;             /* remove any top margin */
+    padding: 0;
 }
+
 
 .nav-menu li a {
     color: #ffffff;
@@ -309,19 +309,12 @@ section {
     box-shadow: 0 0 12px #ffcc00aa;
 }
 
-/* Thumbnail images */
-.thumb-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display: block;
-}
-
 /* Titles under thumbnails */
 .video-title {
-    margin-top: 8px;
-    font-size: 0.9rem;
-    color: #ffcc00;
+    display: center;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #ffffff;
 }
 
 /* Mobile improvements */
