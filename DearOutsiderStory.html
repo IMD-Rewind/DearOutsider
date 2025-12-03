@@ -105,7 +105,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
         width: 100vw;
         height: 100vh;
         object-fit: cover;
-        z-index: -1; /* Pushes it behind everything */
+        z-index: -10 !important; /* Pushes it behind everything */
     }
 
     /* Optional: darken video a bit for readability */
@@ -116,21 +116,38 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.3);  
+        background: rgba(0, 0, 0, 0.578);  
     }
 
     /* Ensure SugarCube text stays above video */
-    #story {
+    #passages, .passage, tw-story, tw-passage {
         position: relative;
-        z-index: 10;
+        z-index: 15 !important;
+        background: rgba(0, 0, 0, 0.71);
     }
+</style>
+<style>
+.story-img {
+    width: 500px;        /* choose the size you want */
+    max-width: 100%;     /* prevents overflow on small screens */
+    height: auto;        /* keeps proportions */
+    display: block;      /* allows centering */
+    margin: 20px auto;   /* centers the image */
+    border-radius: 10px; /* optional rounding */
+}
+
+
+/* Se vuoi un leggero bordo luminoso per farla risaltare */
+.story-image {
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
 </style>
 
 </head>
 <body>
 	<!-- Background Video -->
 	<video id="bg-video" autoplay loop muted playsinline>
-		<source src="assets\videos\bg-fire-no-sound.mp4" type="video/mp4">
+		<source src="assets/videos/bg-fire-no-sound.mp4" type="video/mp4">
 	</video>
 	
 	<div id="init-screen">
@@ -143,7 +160,6 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 	<tw-storydata name="DearOutsiderStory" startnode="1" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="2F6831FD-984B-462C-9FC2-5086EA895D5A" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script>
 		<!--Passage 1-->
 		<tw-passagedata pid="1" name="Start" tags="" position="900,100" size="100,100">
-			<!--magari inserire foto di porto badisco a lato a sinistra: prendi da assets-->
 			<!--put flags for different languages but only english will be active: sotto a restart-->
 			&lt;b&gt;Porto Badisco, Otranto&lt;/b&gt;
 			&lt;b&gt;February 1st, XXXX&lt;/b&gt;
@@ -195,7 +211,11 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<!--Passage 4-->
 		<tw-passagedata pid="4" name="Switch on your flashlight" tags="" position="775,250" size="100,100">
 			<!--if sound of flashlight can't be put on button then put at the start of this scene-->
-			<!--img of wall paintings: hero-bg.png-->
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;assets\img\hero-bg.png&quot;&gt;
+            &lt;/div&gt;
+
 			You and your colleagues stand up and find yourselves in front of some walls with paintings on them and quickly figure out that you landed in an underground cave. 
 
 			On the walls, there are geometrical shapes alongside figures that seem to portray humans and animals.
@@ -208,17 +228,21 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<!--Passage 5-->
 		<tw-passagedata pid="5" name="Start Walking" tags="" position="975,250" size="100,100">
 			<!--put footsteps inside a cave sound-->
-			While walking you start speculating on the meanings of the drawings and what they are actually portraying. 
-			<!--mettere immagini divise: 
-			1)immagine pittogrammi cervi caccia: start walking 1-->
+			While walking you start speculating on the meanings of the drawings and what they are actually portraying.
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\Start Walking 1.png&quot;&gt;
+            &lt;/div&gt;
 
 			Speleologist 1:
 			&lt;i&gt;« Hey, I think I see some drawings of people here... It seems like they have a bow in their hands so maybe they are hunting? »&lt;/i&gt;
 
 			Speleologist 2:
 			&lt;i&gt;« I think you are right!! Don&#39;t these look like animals running from them?! »&lt;/i&gt;
-
-			<!--2)immagine pittogrammi mani: start walking 2-->
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\Start Walking 2.png&quot;&gt;
+            &lt;/div&gt;
 
 			Speleologist 3:
 			&lt;i&gt;« Guys, I see some handprints on this wall! »&lt;/i&gt;
@@ -228,8 +252,10 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 			While your colleagues make guesses about the drawings, you walk a bit further in and call the others:
 			&lt;i&gt;« Hey guys, there are more!! There is a really peculiar one here! »&lt;/i&gt;
-
-			<!--3)put Shaman pictogram: start walking 3-->
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\Start Walking 3.png&quot;&gt;
+            &lt;/div&gt;
 
 			Speleologist 1:
 			&lt;i&gt;« It looks like a monkey! »&lt;/i&gt;
@@ -260,7 +286,11 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 		<!--Passage 7-->
 		<tw-passagedata pid="7" name="Done Exploring" tags="" position="1350,250" size="100,100">
-			<!--gif sciamano danzante: done exploring-->
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\(Fahmy) __Done Exploring__.gif&quot;&gt;
+            &lt;/div&gt;
+
 			After you and your colleagues are done exploring the cave, a glow appears behind you; leaving you with no choice but to turn around and find its source. 
 
 			You see the pictogram you interpreted as a dancing Shaman actually dancing on the wall. The air feels heavy again, the purple smoke comes back alongside some peculiar scents.
@@ -284,7 +314,11 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 			<!--firepit sound and footsteps-->
 			While getting closer to the fire pit, you notice the dancing pictogram is missing and the person is right in front of it.
 
-			<!--immagine Shamano umano: get closer-->
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\Shaman _ _Get Closer.png&quot;&gt;
+            &lt;/div&gt;
+
 			Speleologist 4 reacts:
 			&lt;i&gt;« FIRST REACTION: SHOCK! »&lt;/i&gt;
 
@@ -324,7 +358,11 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 			For some reason the Shaman doesn&#39;t seem to remember the words to his story.
 
 			&lt;i&gt;« I... I don&#39;t remember... How does my sentence continue? »&lt;/i&gt;
-			<!--metti sfondo sciamano: help the shaman-->
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\1) dialogue choice _ _Help the Shaman.png&quot;&gt;
+            &lt;/div&gt;
+
 			Help him by choosing the correct option:
 
 			&lt;i&gt;« … Becomes a high-quality cultural asset — ideal for enhancing the region and promoting sustainable tourism. Would you like my answer to be more detailed, more concise, or more relevant to your visit to the site? »&lt;/i&gt;
@@ -336,8 +374,12 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 		<!--Passage 10-->
 		<tw-passagedata pid="10" name="Choose text 1" tags="" position="1050,550" size="100,100">
-			<!--text1=scelta sbagliata-->
-			<!--img Shamano con feedback negativo + indizi: coose text1-->
+
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\UI wrong choice from game 1) _ _Choose Text 1.png&quot;&gt;
+            &lt;/div&gt;
+
 			This choice doesn&#39;t seem to be very in line with the Shaman&#39;s story. Try to think about the context of the cave and Neolithic history, what do you think he would like to tell you?
 
 			Shaman:
@@ -354,8 +396,12 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		
 		<!--Passage 11-->
 		<tw-passagedata pid="11" name="Choose text 2" tags="" position="800,550" size="100,100">
-			<!--text2=scelta giusta-->
-			<!--img Shamano con feedback positivo: choose text 2-->
+
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\UI correct choice from game 1) _ _Choose Text 2.png&quot;&gt;
+            &lt;/div&gt;
+
 			Shaman:
 			&lt;i&gt;« Yes! Those are the words I was looking for. And so, as I was telling you all... »&lt;/i&gt;
 
@@ -410,32 +456,51 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 			Speleologist 4 says:
 			&lt;i&gt;« Ah! The backpack! »&lt;/i&gt;
-			&lt;!--ask for hints img--&gt;
 
 			[[Open your Backpack]]
 		</tw-passagedata>
 
 		<!--Passage 15-->
 		<tw-passagedata pid="15" name="Open your Backpack" tags="" position="300,400" size="100,100">
+
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\backpack + items _ _Ask For Hints.png&quot;&gt;
+            &lt;/div&gt;
+
 			You and your colleagues do as the Shaman says and find something glowing inside.
-			<!--figma pintadera with ???: open your backpack-->
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\selected object info (after touching the cell) _ _Open Your Backpack.png&quot;&gt;
+            &lt;/div&gt;
 
 			[[Discover Your Object]]
 		</tw-passagedata>
 
 		<!--Passage 16-->
 		<tw-passagedata pid="16" name="Discover Your Object" tags="" position="375,550" size="100,100">
-			<!--Figma with pintadera described:  discover your object-->
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\pintadera explained + human shaman _ _Discover Your Object.png&quot;&gt;
+            &lt;/div&gt;
 
 			[[Discover the other Findings]]
 		</tw-passagedata>
 
 		<!--Passage 17-->
 		<tw-passagedata pid="17" name="Discover the other Findings" tags="" position="275,800" size="100,100">
-			<!--Figma con gli altri oggetti:  discover the other findings 1-->
+
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\objects found _ _Discover The Other Findings 1.png&quot;&gt;
+            &lt;/div&gt;
 
 			You ask your colleagues what they have found and annotate everything in your diary:
-			<!--Figma diary con descrizioni: discover the other findings 2-->
+
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\diary _ _Discover The Other Findings 2.png&quot;&gt;
+            &lt;/div&gt;
 
 			[[Speak to the Shaman]]
 		</tw-passagedata>
@@ -457,7 +522,10 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 		<!--Passage 19-->
 		<tw-passagedata pid="19" name="Place the Items" tags="" position="600,800" size="100,100">
-			<!--metti immagine con indizi: place the items-->
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\2) puzzle game _ _Place The Items.png&quot;&gt;
+            &lt;/div&gt;
 
 			[[Done Placing]]
 		</tw-passagedata>
@@ -465,6 +533,11 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<!--Passage 20-->	
 		<tw-passagedata pid="20" name="Done Placing" tags="" position="800,725" size="100,100">
 			<!--sfondo flames o caccia-->
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\Start Walking 1.png&quot;&gt;
+            &lt;/div&gt;
+
 			The fire gets stronger and the Shaman invites you to sit around it. 
 
 			From deep inside the cave, three young hunters, like the ones you saw on the walls before, appear.
@@ -514,14 +587,20 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 			Hunter 1: 
 			&lt;i&gt;« Stranger, you have new eyes. Perhaps you can see what we can no longer distinguish. Help us rediscover the truth of our hunt.  »&lt;/i&gt;
 
-			<!--mix animali: listen to the hunters 1-->
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\3) AI quiz game _ _Listen To The Hunters 1.png&quot;&gt;
+            &lt;/div&gt;
 
 			The paintings on the walls have changed. The Shaman smirks and says:
 			&lt;i&gt;« The hunters don&#39;t seem to recognize which animal they were hunting... »&lt;/i&gt;
 
 			Recall the wall paintings you have seen in the beginning and help them recognize the correct animal.
 
-			<!--mix animali: listen to the hunters 2-->
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\3) AI quiz game _ _Listen To The Hunters 2.png&quot;&gt;
+            &lt;/div&gt;
 
 			What were they hunting? Choose a pictogram:
 
@@ -530,12 +609,17 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 		<!--Passage 22-->
 		<tw-passagedata pid="22" name="1" tags="" position="1400,800" size="100,100">
-			That&#39;s a mammut! Maybe you are getting confused? 
+			That&#39;s a mammut! Maybe you are getting confused?
 
 			Try Again:
-			<!--mix animali: listen to the hunters 2-->
 
-			[[2]] [[3]]<!--corretta--> [[4]]
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\3) AI quiz game _ _Listen To The Hunters 2.png&quot;&gt;
+            &lt;/div&gt;
+
+
+			[[1]] [[2]] [[3]]<!--corretta--> [[4]]
 		</tw-passagedata>
 
 		<!--Passage 23-->
@@ -543,15 +627,23 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 			A horse? Are you sure?
 
 			Try Again:
-			<!--mix animali: listen to the hunters 2-->
 
-			[[1]] [[3]] <!--corretta--> [[4]] 
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\3) AI quiz game _ _Listen To The Hunters 2.png&quot;&gt;
+            &lt;/div&gt;
+
+			[[1]] [[2]] [[3]]<!--corretta--> [[4]]
 		</tw-passagedata>
 
 		<!--Passage 24-->
 		<tw-passagedata pid="24" name="3" tags="" position="1250,550" size="100,100">
 			Yes! The hunters were hunting deers!
 			<!--sfondo caccia-->
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\Start Walking 1.png&quot;&gt;
+            &lt;/div&gt;
 
 			The hunters continue:
 			&lt;i&gt;« Now… now I remember perfectly! The area was full of deers! We painted so many of them on the walls of the cave, while in the flickering firelight we recounted our feats, so that they would be passed down from generation to generation. Yes… Deer hunting was a fundamental activity for us: a ritual, a test of courage, a way to honor the Great Mother and ensure the prosperity of our group. »&lt;/i&gt;
@@ -572,9 +664,13 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 			That&#39;s a goat!  
 
 			Try Again:
-			<!--mix animali: listen to the hunters 2-->
+			<!--img-->
+			&lt;div&gt;
+            	&lt;img class="story-img" src=&quot;Canva\3) AI quiz game _ _Listen To The Hunters 2.png&quot;&gt;
+            &lt;/div&gt;
 
-			[[1]] [[2]] [[3]] <!--corretta-->
+
+			[[1]] [[2]] [[3]]<!--corretta--> [[4]]
 		</tw-passagedata>
 		
 		<!--Passage 26-->
