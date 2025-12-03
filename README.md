@@ -35,11 +35,11 @@ Designed as an immersive *visually-driven journey*, the project blends:
  🖌️  Figma UI prototypes and concept art 
 
 ---
-<!-- Figma Prototype / commit per aggiungere il progetto
-## 🚀 **Play the Experience**
 
-👉 **Launch the project:**  
-**https://your-url-or-github-pages-link**-->
+## 🚀 **Play the Experience**
+**Twine** prototype to enjoy the narration: **https://imd-rewind.github.io/DearOutsider/DearOutsiderStory.html**
+ 
+**Figma** prototype to enjoy the game UI: **https://imd-rewind.github.io/DearOutsider/#section3**
 
 ---
 
