@@ -37,9 +37,10 @@ Designed as an immersive *visually-driven journey*, the project blends:
 ---
 
 ## 🚀 **Play the Experience**
-**Twine** prototype to enjoy the narration: **https://imd-rewind.github.io/DearOutsider/DearOutsiderStory.html**
+
+Enjoy the narration here 👉**<a href="https://imd-rewind.github.io/DearOutsider/DearOutsiderStory.html">Twine</a>**.
  
-**Figma** prototype to enjoy the game UI: **https://imd-rewind.github.io/DearOutsider/#section3**
+Enjoy the game UI here 👉**<a href="https://imd-rewind.github.io/DearOutsider/#section3">Figma</a>**.
 
 ---
 
