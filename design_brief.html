@@ -58,11 +58,23 @@
             <li><a href="index.html#section2">Twine</a></li>
             <li><a href="index.html#section3">Figma</a></li>
             <li><a href="index.html#section4">Videos</a></li>
-            <li><a href="#section5" style="color: #ffd36a;">Design Brief</a></li>
-        </ul>
-    </nav>
-</header>
+            <li class="has-submenu">
+    <a href="#section5" style="color: #ffd36a;">Design Brief<i class="fa fa-toggle-down"></i></a>
 
+        <!-- Submenu -->
+        <ul class="sub-nav-menu">
+            <li><a href="#brief1">1. The Context</a></li>
+            <li><a href="#brief2">2. The Audience</a></li>
+            <li><a href="#brief3">3. The Concept</a></li>
+            <li><a href="#brief4">4. Requirements</a></li>
+            <li><a href="#brief5">5. Ideation</a></li>
+            <li><a href="#brief6">6. Disruption</a></li>
+            <li><a href="#brief7">7. Team Roles</a></li>
+            <li><a href="#brief8">8. UX Scenario</a></li>
+            <li><a href="#brief9">9. References</a></li>
+        </ul>
+    </li>
+</header>
 
    <!-- ===== Section 5 ===== -->
     <section id="section5" class="content-section">
@@ -70,6 +82,7 @@
             <div class="text-center mb-5">
             <h2>Design Brief</h2>
         </div>
+        <section id="brief1">
             <p style="text-align: justify;">
                 <b>1. THE CONTEXT</b><br><br>
                 The <b>Deer Cave of Porto Badisco</b> (La Grotta dei Cervi di Porto Badisco), discovered in 1970 near Otranto in Salento, is one of the most extraordinary prehistoric sites in Europe. Here, more than 7,000 years ago, communities left the largest and most complex ensemble of <b>Neolithic wall paintings</b> known on the continent. For a long time, the cave was a true underground sanctuary, frequented by groups even from distant regions of the Mediterranean.
@@ -241,7 +254,9 @@
                 The project addresses a <b>broad</b> and <b>varied audience</b>, including curious visitors, school groups, and enthusiasts of history and archaeology. The digital experience is designed to be accessible even to users who are unfamiliar with the Deer Cave, offering intuitive tools and immersive content capable of <b>engaging both newcomers and more experienced individuals</b>.
                 <br><br>
             </p>
+        </section>
 
+        <section id="brief2">
             <p style="text-align: justify;">
                <b>2. THE AUDIENCE</b><br><br> 
                The project is aimed at all those who wish to deepen their understanding of the Deer Cave: both <b>local visitors</b> interested in rediscovering the history of their origins, and the many <b>tourists</b> who travel to Salento every year, including <b>foreign visitors</b> who often ignore the existence of this site despite its European relevance. For this heterogeneous audience, made up of curious visitors, traveling families, students, and enthusiasts of history and archaeology, the video game experience represents a unique opportunity to explore a place that is normally invisible and inaccessible to the public, transforming the visit into a moment of immersive and memorable learning.<br><br>
@@ -286,8 +301,9 @@
                         User journey
                     </figcaption>
                 </figure>
+        </section>
 
-            
+        <section id="brief3">
             <p style="text-align: justify;">
                 <b>3. THE CONCEPT</b><br><br>
                 The main challenge lies in providing an immersive experience capable of compensating for the complete impossibility of physically visiting the cave. At present, the only way to “enter” the Deer Cave is through the 3D reconstruction created by the University of Salento, available in a dedicated room of the exhibition <i>“I luoghi della Preistoria e la Grotta dei Cervi”</i>. To this <b>physical barrier</b> is added the difficulty of <b>attracting audiences</b> who do not usually engage with prehistory or archaeological displays, such as occasional tourists, families, and non-specialist visitors, as well as the <b>interpretive complexity</b> of the Neolithic pictograms, which are often difficult to understand without appropriate mediation.<br>
@@ -311,7 +327,9 @@
                 The <b>themes selected as case studies</b> derive directly from the symbolic elements present within the Deer Cave. The visual and narrative inspiration includes references to <i>Brother Bear</i> for its connection between human figures and the spiritual world; the veneration of the Great Mother Goddess, a central figure in the cave’s paintings and Neolithic ritual context; and initiation rites, evoked both by hunting scenes and by the famous wall of handprints, interpreted as identity marks or ritual proofs. Indeed, as will be explained in the following sections, the ultimate goal of our digital experience is the symbolic act of placing one’s own hand on the wall, a gesture that echoes this ancestral practice and allows visitors to feel part of a human continuity spanning millennia.
                 <br><br>
             </p>
+        </section>
 
+        <section id="brief4">
             <p style="text-align: justify;">
                 <b>4. REQUIREMENTS</b><br><br>
                 To achieve the institutional, cognitive, and experiential goals of the project, a series of requirements have been identified and organized according to <b>the MoSCoW methodology</b>, an important component of agile development.
@@ -361,7 +379,9 @@
                 </ul>
                 <br>
             </p>
+        </section>
 
+        <section id="brief5">
             <p style="text-align: justify;">
                 <b>5. IDEATION</b><br><br>
                 <b>5.1 The user experience</b><br><br>
@@ -601,7 +621,9 @@
                 <p style="text-align: justify;">
                     Maintenance will require continuous monitoring, regular software updates, and periodic checks of the tablets’ performance.
                 </p><br>
+            </section>
 
+            <section id="brief6">
                 <p style="text-align: justify;">
                 <b>6. DISRUPTION</b><br><br>
                 The development and long-term sustainability of the project must address several potential issues that could compromise both its feasibility and its preservation over time.<br>
@@ -609,17 +631,22 @@
                 Another critical issue involves the continuous <b>deterioration of digital resources</b> and the <b>rapid evolution of technological standards</b>. Digital materials such as videos, textures, or audio may degrade over time, suffer file corruption, or become incompatible with new software ecosystems. Likewise, software may evolve or be discontinued, threatening the project’s long-term operability. The risk is that some resources may become partially or completely inaccessible, compromising both the integrity of the experience and its potential for future updates or exhibitions. To mitigate this risk, it is essential to adopt sustainable digital preservation practices, such as periodic file migration, redundant backups, comprehensive documentation of dependencies, and the use of open or widely supported formats.<br>
                 A further critical concern relates to the <b>licensing</b> and intellectual property status of the 3D model integrated into the project. Unclear ownership, restrictive usage rights, or missing permissions may limit the distribution and visibility of the work. To avoid such complications, it is necessary to verify the official license, obtain written authorization from the data providers, and ensure that attribution and usage comply with the required guidelines.<br>
                 In conclusion, the main challenges involve economic constraints, the fragility and obsolescence of digital resources, and the legal complexity of managing licensed 3D data. Anticipating these issues through careful planning, responsible archiving, and clear legal frameworks is essential to safeguard the project’s durability and integrity.<br><br>
+            </section>
 
-
+            <section id="brief7">
                 <p style="text-align: justify;">
                 <b>7. TEAM ROLES AND WORK</b><br><br>
                 The team is composed of Fahmida Islam, Maria De Matteis, and Martina Marchesi, students of the Master’s Degree in Digital Humanities and Digital Knowledge.
                 The work was distributed in a balanced way: all members participated in the various phases of the workflow, as the shared goal was to develop a coherent, homogeneous, and fully integrated project. However, based on previous studies, individual experience, and personal inclinations, each member focused more deeply on specific aspects of the design process.<br>
                 From the development of the initial idea to the creation of a first prototype, here are the profiles of the team members who contributed to the project:<br><br>
                 <b>Maria De Matteis</b> holds a Bachelor’s Degree in Cultural Heritage and a Master’s Degree in Archaeology and Cultures of the Ancient World. Her academic background allowed her to bring solid disciplinary expertise in Archaeology to the project and to take particular responsibility for the first phase of the workflow, dedicated to researching the historical and archaeological context of the Deer Cave through bibliographic and digital sources. This phase was essential, as one of the project’s priorities was to ensure a rigorous and scientifically reliable foundation. After collecting and verifying the necessary information, Maria worked on developing a coherent narrative base upon which the video game’s storyline was later built. She also contributed significantly to the writing of the website texts, ensuring their accuracy, clarity, and cultural relevance, and was directly involved in integrating this content into the website.<br><br>
-                <b>Fahmida Islam</b> holds a Bachelor’s Degree in Anthropology from the University of Bologna and, thanks to her academic background, brought to the project a valuable perspective on symbolic systems and the cultural dynamics of ancient human communities. In terms of practical development, Fahmida was primarily responsible for building the website that collects the various stages of the project and curated the interactive narrative using Twine, shaping decision-based pathways that reflect the game’s logic. She also played an important role in producing the video trailer and in editing videos and images, contributing to the audiovisual dimension of the project.<br><br>
+                <b>Fahmida Islam</b> holds a Bachelor’s Degree in Anthropology from the University of Bologna and, thanks to her academic background, brought to the project a valuable perspective on symbolic systems and the cultural dynamics of ancient human communities. In terms of practical development, Fahmida was primarily responsible for building the website that collects the various stages of the project and curated the interactive narrative using Twine, shaping decision-based pathways that reflect the game’s logic. She also played an important role in producing the video trailer  (using parts of the
+                    video produced by the University of Salento that documents the creation of the <a href="https://vimeo.com/407669569" target="_blank">3D
+                    model</a>) and in editing videos and images, contributing to the audiovisual dimension of the project.<br><br>
                 <b>Martina Marchesi</b> holds a Bachelor’s Degree in Humanities from the University of Bologna and supported the team especially in the revision and refinement of the storyline, drawing not only on her skills in content reworking but also on the sensitivity developed through her personal experience with video games. Her creativity proved particularly valuable in the graphic design phase: Martina worked on the development of visual interfaces using tools such as Canva and Figma, helping to define the aesthetic and communicative identity of the project. Her attention to visual coherence and user experience contributed to shaping a prototype that is both harmonious and functional.<br><br>
+            </section>
 
+            <section id="brief8">
                 <p style="text-align: justify;">
                 <b>8. UX SCENARIO</b><br><br>
                 In the development of the UX scenario, Twine was used to map and visualize the <b>interactive structure</b> of the user experience. Its node-based system made it possible to design the flow of actions, dialogues, multiple-choice options, and branching pathways that shape the player’s journey. By structuring the narrative in this way, Twine allowed us to build a coherent, intuitive, and well-organized storyline that reflects how users will actually navigate and interact with the video game.<br><br>
@@ -628,7 +655,9 @@
                 <p style="text-align: justify;">
                 You can find the link <a href="https://imd-rewind.github.io/DearOutsider/DearOutsiderStory.html">here</a>.<br><br>
                 </p>
+            </section>
 
+            <section id="brief9">
                 <p style="text-align: justify;">
                     <b>9. REFERENCES</b><br><br>
 
@@ -701,27 +730,7 @@
                         <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
                     </ul>
                 </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </section>
 
 
             <!-- <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;

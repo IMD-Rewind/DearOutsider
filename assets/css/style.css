@@ -5,6 +5,19 @@
     font-style: normal;
 }
 
+/* Offset anchor scrolling (adjust the value to match your fixed navbar height) */
+:root {
+    --scroll-offset: 70px; /* try 80–120 depending on your header height */
+}
+
+section[id] {
+    scroll-margin-top: var(--scroll-offset);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 body.dark-theme {
     background: #000;
@@ -173,6 +186,106 @@ a { color: #fff; text-decoration: underlined; }
 .nav-menu li a.active i {
     color: #fff100;
     text-shadow: 0 0 8px #ffd36a;
+}
+
+/*SUB-NAVBAR*/
+/* ========== Submenu Under Design Brief ========== */
+.has-submenu {
+    position: relative;
+}
+
+.sub-nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1f1f1f; /* dark dropdown to match your aesthetic */
+    padding: 0 3px;
+    margin: 0 2px;
+    list-style: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    z-index: 1000;
+    min-width: 10px;
+}
+
+.sub-nav-menu li a {
+    display: block;
+    padding: 8px 14px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: 0.2s ease;
+}
+
+.sub-nav-menu li a:hover {
+    background: #ffd36a;
+    color: #000;
+}
+
+/* Show submenu on hover (desktop) */
+.has-submenu:hover > .sub-nav-menu {
+    display: block;
+}
+
+/* ============================
+   📱 MOBILE SCROLL BAR VERSION
+   ============================ */
+@media (max-width: 768px) {
+
+    .sub-nav-menu {
+        position: static;
+        display: flex !important;
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 16px;
+
+        background: #1f1f1f;
+        padding: 10px 10px;
+        margin-top: 10px;
+        border-radius: 6px;
+
+        scrollbar-width: thin;
+        scrollbar-color: #ffd36a #333; /* Firefox */
+    }
+
+    /* For WebKit browsers (Chrome, Safari, Edge) */
+    .sub-nav-menu::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .sub-nav-menu::-webkit-scrollbar-track {
+        background: #333;
+        border-radius: 10px;
+    }
+
+    .sub-nav-menu::-webkit-scrollbar-thumb {
+        background: #ffd36a;
+        border-radius: 10px;
+    }
+
+    .sub-nav-menu li {
+        display: inline-block;
+    }
+
+    .sub-nav-menu li a {
+        padding: 6px 10px;
+        background: #2a2a2a;
+        border-radius: 4px;
+        font-size: 13px;
+        color: #ffd36a;
+        white-space: nowrap;
+    }
+}
+
+/* Highlight active submenu link */
+.sub-nav-menu a.active {
+    background: #ffd36a !important;
+    color: #000 !important;
+    font-weight: bold;
+    border-radius: 4px;
 }
 
 
