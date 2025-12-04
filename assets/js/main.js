@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Reload and play
         mainVideo.load();
-        mainVideo.play();
+        mainVideo.onplay();
 
         // Fade back in
         mainVideo.style.opacity = 1;
