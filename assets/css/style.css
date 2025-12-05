@@ -149,27 +149,32 @@ a { color: #fff; text-decoration: underlined; }
 }
 
 /* Responsive menu for mobile */
-@media (max-width: 768px) {
+@media (max-width: 750px) {
     .nav-toggle {
         display: flex;
     }
 
     .nav-menu {
-        position: absolute;
-        top: 70px; /* height of navbar */
+        position: fixed;              /* ❗ no more pushing layout */
+        top: 70px;
         right: 0;
         background: #111;
         flex-direction: column;
-        width: 200px;
+
+        width: 220px;
+        height: calc(100vh - 70px);   /* full height under navbar */
         padding: 20px;
         gap: 15px;
-        transform: translateX(100%);
+
+        transform: translateX(100%);  /* slide off-screen */
         transition: transform 0.3s ease;
+
         border-radius: 8px 0 0 8px;
+        z-index: 999;                 /* stays behind navbar */
     }
 
     .nav-menu.show {
-        transform: translateX(0);
+        transform: translateX(0);     /* slide IN */
     }
 
     .nav-menu li a {
