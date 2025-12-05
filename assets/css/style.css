@@ -7,7 +7,7 @@
 
 /* Offset anchor scrolling (adjust the value to match your fixed navbar height) */
 :root {
-    --scroll-offset: 70px; /* try 80–120 depending on your header height */
+    --scroll-offset: 70px !important; /* try 80–120 depending on your header height */
 }
 
 section[id] {
