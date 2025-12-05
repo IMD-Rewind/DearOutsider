@@ -40,7 +40,7 @@ Designed as an immersive *visually-driven journey*, the project blends:
 
 Enjoy the narration here 👉**<a href="https://imd-rewind.github.io/DearOutsider/DearOutsiderStory.html">Twine</a>**.
  
-Enjoy the game UI here 👉**<a href="https://www.figma.com/proto/5uYv1VuZP5wqdA3bpMPLK4/Dear-Outsider-Prototype?node-id=130-123&p=f&t=eQpftj8DxpMWke98-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=130%3A123&show-proto-sidebar=1">Figma</a>**.
+Enjoy the game UI here 👉**<a href="https://www.figma.com/proto/5uYv1VuZP5wqdA3bpMPLK4/Dear-Outsider-Prototype?node-id=213-92&p=f&t=IzIcI751wPWAY1t8-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=213%3A92">Figma</a>**.
 
 ---
 
