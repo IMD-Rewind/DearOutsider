@@ -24,6 +24,10 @@ body.dark-theme {
     color: #eee;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 h1, h2 {
     font-family: 'PrehistoricCaveman', sans-serif;
     font-size: 1rem;
@@ -149,11 +153,11 @@ a { color: #fff; text-decoration: underlined; }
 }
 
 /* Responsive menu for mobile */
-@media (max-width: 750px) {
-    .nav-toggle {
+@media (max-width: 768px) {
+     .nav-toggle {
         display: flex;
     }
-
+    
     .nav-menu {
         position: fixed;              /* ❗ no more pushing layout */
         top: 70px;
@@ -611,3 +615,4 @@ section {
   backdrop-filter: none !important;
   filter: none !important;
 }
+
