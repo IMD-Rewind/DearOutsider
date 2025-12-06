@@ -238,7 +238,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 				&lt;/video&gt;
 				
 			&lt;div class=&quot;passage-text&quot;&gt;
-				You are a &lt;i&gt;speleologist&lt;/i&gt;, a specialist of caves and you love exploring them.
+				You are a ''speleologist'', a specialist of caves and you love exploring them.
 				This time you are in Otranto doing research on the land with four colleagues.&lt;br&gt;&lt;br&gt;
 				While examining the morphological characteristics, suddenly, the sky turns black and the earth starts trembling.
 				A crack is forming under your feet and quickly turns into a hole...  
@@ -252,6 +252,8 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<!--Passage 3-->
 		<tw-passagedata pid="3" name="Go on" tags="" position="600,250" size="100,100">
 			<!--put water drops inside a cave sound: download from freesounds-->
+			&lt;&lt;audio watersound play&gt;&gt;
+
 			You hear water dripping somewhere and regain your consciousness inside a humid and pitch black place.
 
 			You can&#39;t see anything and worriedly ask for your colleagues:
@@ -280,6 +282,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<!--Passage 4-->
 		<tw-passagedata pid="4" name="Switch on your flashlight" tags="" position="775,250" size="100,100">
 			<!--if sound of flashlight can't be put on button then put at the start of this scene-->
+            &lt;&lt;audio flashlightsound play&gt;&gt;
 			<!--img-->
 			&lt;div&gt;
             	&lt;img class="story-img" src=&quot;assets\img\hero-bg.png&quot;&gt;
@@ -297,6 +300,9 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<!--Passage 5-->
 		<tw-passagedata pid="5" name="Start Walking" tags="" position="975,250" size="100,100">
 			<!--put footsteps inside a cave sound-->
+			&lt;&lt;audio flashlightsound stop&gt;&gt;
+			&lt;&lt;audio walkingsound play&gt;&gt;
+
 			While walking you start speculating on the meanings of the drawings and what they are actually portraying.
 			<!--img-->
 			&lt;div&gt;
@@ -348,6 +354,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		
 		<!--Passage 6-->
 		<tw-passagedata pid="6" name="Keep Exploring" tags="" position="1650,475" size="100,100">
+			&lt;&lt;audio walkingsound stop&gt;&gt;
 			<!--video nostro esplorazione grotta: da assets videos-->
 			&lt;video controls playsinline&gt;
 				&lt;source src=&quot;assets\videos\dear-cave-discovery.mp4&quot; type=&quot;video/mp4&quot;&gt;
@@ -367,9 +374,9 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 			You see the pictogram you interpreted as a dancing Shaman actually dancing on the wall. The air feels heavy again, the purple smoke comes back alongside some peculiar scents.
 			<!--risata sciamano: freesounds-->
-
+			&lt;&lt;audio dancingshamansound play&gt;&gt;
 			<!--metti suono fuoco-->
-			<!--metti suono psssst pssst psssst-->
+			&lt;&lt;audio mainsound play&gt;&gt;
 			<!--crepitio di fuoco onomatopea-->
 			After the disappearing smoke clears your vision; you see a fire pit below the wall and it seems like there is someone now, in front of it, mumbling something.
 
@@ -383,7 +390,10 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		
 		<!--Passage 8-->
 		<tw-passagedata pid="8" name="Get Closer" tags="" position="1300,400" size="100,100">
+			&lt;&lt;audio dancingshamansound stop&gt;&gt;
+			&lt;&lt;audio mainsound stop&gt;&gt;
 			<!--firepit sound and footsteps-->
+			&lt;&lt;audio firewalkingsound play&gt;&gt;
 			While getting closer to the fire pit, you notice the dancing pictogram is missing and the person is right in front of it.
 
 			<!--img-->
@@ -426,6 +436,9 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		
 		<!--Passage 9-->
 		<tw-passagedata pid="9" name="Help the Shaman" tags="" position="1100,400" size="100,100">
+			&lt;&lt;audio firewalkingsound stop&gt;&gt;
+			&lt;&lt;audio mainsound play&gt;&gt;
+
 			<!--struggling sound-->
 			For some reason the Shaman doesn&#39;t seem to remember the words to his story.
 
@@ -446,6 +459,9 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 		<!--Passage 10-->
 		<tw-passagedata pid="10" name="Choose text 1" tags="" position="1050,550" size="100,100">
+			&lt;&lt;audio rightsound stop&gt;&gt;
+			&lt;&lt;audio wrongsound play&gt;&gt;
+			&lt;&lt;audio mainsound play&gt;&gt;
 
 			<!--img-->
 			&lt;div&gt;
@@ -468,6 +484,9 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		
 		<!--Passage 11-->
 		<tw-passagedata pid="11" name="Choose text 2" tags="" position="800,550" size="100,100">
+			&lt;&lt;audio wrongsound stop&gt;&gt;
+			&lt;&lt;audio rightsound play&gt;&gt;
+			&lt;&lt;audio mainsound play&gt;&gt;
 
 			<!--img-->
 			&lt;div&gt;
@@ -487,8 +506,15 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 		<!--Passage 12-->
 		<tw-passagedata pid="12" name="Keep Listening" tags="" position="800,400" size="100,100">
+			&lt;&lt;audio mainsound stop&gt;&gt;
+
+			&lt;&lt;audio wrongsound stop&gt;&gt;
+			&lt;&lt;audio rightsound stop&gt;&gt;
+
 			<!--metti sfondo live flames: download-->
 			<!--sound fuoco assolutamente-->
+			&lt;&lt;audio mainsound play&gt;&gt;
+
 
 			The Shaman says:
 			&lt;i&gt;« Once you have reached this place, it is customary to make offerings to ingratiate yourselves with divine favors. &lt;/i&gt;
@@ -534,7 +560,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 		<!--Passage 15-->
 		<tw-passagedata pid="15" name="Open your Backpack" tags="" position="300,400" size="100,100">
-
+			&lt;&lt;audio backpacksound play&gt;&gt;
 			<!--img-->
 			&lt;div&gt;
             	&lt;img class="story-img" src=&quot;Canva\backpack + items _ _Ask For Hints.png&quot;&gt;
@@ -551,6 +577,9 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 		<!--Passage 16-->
 		<tw-passagedata pid="16" name="Discover Your Object" tags="" position="375,550" size="100,100">
+			&lt;&lt;audio backpacksound stop&gt;&gt;
+			&lt;&lt;audio mainsound play&gt;&gt;
+
 			<!--img-->
 			&lt;div&gt;
             	&lt;img class="story-img" src=&quot;Canva\pintadera explained + human shaman _ _Discover Your Object.png&quot;&gt;
@@ -561,7 +590,8 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 		<!--Passage 17-->
 		<tw-passagedata pid="17" name="Discover the other Findings" tags="" position="275,800" size="100,100">
-
+			&lt;&lt;audio mainsound stop&gt;&gt;
+			&lt;&lt;audio writingsound play&gt;&gt;
 			<!--img-->
 			&lt;div&gt;
             	&lt;img class="story-img" src=&quot;Canva\objects found _ _Discover The Other Findings 1.png&quot;&gt;
@@ -580,9 +610,13 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<!--Passage 18-->
 		<tw-passagedata pid="18" name="Speak to the Shaman" tags="" position="450,700" size="100,100">
 		<!--sfondo flames live-->
+			&lt;&lt;audio writingsound stop&gt;&gt;
+			&lt;&lt;audio mainsound play&gt;&gt;
+
+
 
 			You:
-			&lt;i&gt;« We have found the offerings. Here<!--you try to give the things to him...how to say it in sounds??-->. »/i&gt;
+			&lt;i&gt;« We have found the offerings. Here. »&lt;/i&gt;
 
 			The Shaman replies:
 			&lt;i&gt;« You have indeed. But you should not give them to me.
@@ -594,6 +628,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 		<!--Passage 19-->
 		<tw-passagedata pid="19" name="Place the Items" tags="" position="600,800" size="100,100">
+			&lt;&lt;audio objectplacingsound play&gt;&gt;
 			<!--img-->
 			&lt;div&gt;
             	&lt;img class="story-img" src=&quot;Canva\2) puzzle game _ _Place The Items.png&quot;&gt;
@@ -604,6 +639,9 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 		<!--Passage 20-->	
 		<tw-passagedata pid="20" name="Done Placing" tags="" position="800,725" size="100,100">
+			&lt;&lt;audio objectplacingsound stop&gt;&gt;
+
+
 			<!--sfondo flames o caccia-->
 			<!--img-->
 			&lt;div&gt;
@@ -613,6 +651,8 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 			The fire gets stronger and the Shaman invites you to sit around it. 
 
 			From deep inside the cave, three young hunters, like the ones you saw on the walls before, appear.
+			&lt;&lt;audio firewalkingsound play&gt;&gt;
+
 
 			They are here to thank the Great Mother for the successful hunting and turn to you.
 
@@ -622,6 +662,9 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 		<!--Passage 21-->
 		<tw-passagedata pid="21" name="Listen to the Hunters" tags="" position="975,800" size="100,100">
+			&lt;&lt;audio firewalkingsound stop&gt;&gt;
+			&lt;&lt;audio mainsound play&gt;&gt;
+
 			<!--live flames-->
 			<!--iniziano a raccontare ma si fermano quando devono parlare dei cervi-->
 			The hunters start talking to you.
@@ -681,6 +724,9 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 		<!--Passage 22-->
 		<tw-passagedata pid="22" name="1" tags="" position="1400,800" size="100,100">
+			&lt;&lt;audio wrongsound play&gt;&gt;
+			&lt;&lt;audio rightsound stop&gt;&gt;
+
 			That&#39;s a mammut! Maybe you are getting confused?
 
 			Try Again:
@@ -696,6 +742,9 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 		<!--Passage 23-->
 		<tw-passagedata pid="23" name="2" tags="" position="1550,650" size="100,100">
+			&lt;&lt;audio wrongsound play&gt;&gt;
+			&lt;&lt;audio rightsound stop&gt;&gt;
+
 			A horse? Are you sure?
 
 			Try Again:
@@ -710,6 +759,9 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 		<!--Passage 24-->
 		<tw-passagedata pid="24" name="3" tags="" position="1250,550" size="100,100">
+			&lt;&lt;audio wrongsound stop&gt;&gt;
+			&lt;&lt;audio rightsound play&gt;&gt;
+
 			Yes! The hunters were hunting deers!
 			<!--sfondo caccia-->
 			<!--img-->
@@ -733,6 +785,9 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 		<!--Passage 25-->
 		<tw-passagedata pid="25" name="4" tags="" position="1200,850" size="100,100">
+			&lt;&lt;audio wrongsound play&gt;&gt;
+			&lt;&lt;audio rightsound stop&gt;&gt;
+
 			That&#39;s a goat!  
 
 			Try Again:
@@ -747,6 +802,9 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		
 		<!--Passage 26-->
 		<tw-passagedata pid="26" name="Add your Handprint" tags="" position="1650,475" size="100,100">
+			&lt;&lt;audio wrongsound stop&gt;&gt;
+			&lt;&lt;audio rightsound stop&gt;&gt;
+
 			You and your colleagues add your handprints:
 			<!--video o img magari mettere quattro già lì e la nostra appare oppure tutte e cinque appaiono una dopo l&#39;altra?-->
 			&lt;video controls playsinline&gt;
@@ -758,6 +816,9 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 		<!--Passage 27-->
 		<tw-passagedata pid="27" name="End of the Story" tags="" position="1550,250" size="100,100">
+			&lt;&lt;audio mainsound stop&gt;&gt;
+			&lt;&lt;audio teamrewindsound play&gt;&gt;
+
 			<!--live fuoco-->
 			Hi! We are Team Rewind! Thank you for discovering the Deer Cave with us!
 			Did you like it? Please light the flames below and leave a comment if you want, so we can develop this project better in the future!
@@ -767,19 +828,25 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 			Team Rewind will head for the next discovery too! 
 			See you there!
 
-			[End the Experience] <!--riporta al sito web-->
+			<a href="index.html#home">End the Experience</a> <!--riporta al sito web-->
 			[[Start]] Again
 		</tw-passagedata>
 
 		<!--Passage 28 non collegato ad altri passaggi ma serve per i suonds-->
 		<tw-passagedata pid="28" name="StoryInit" tags="" position="1650,500" size="100,100">
-			&lt;&lt;cacheaudio &quot;mainsound&quot; &quot;assets\sounds\fire-sparks.mp3&quot;&gt;&gt;
-			&lt;&lt;cacheaudio &quot;walkingsound&quot; &quot;assets\sounds\walking-in-a-cave.mp3&quot;&gt;&gt;
-			&lt;&lt;cacheaudio &quot;watersound&quot; &quot;assets\sounds\cave-dripping-water.mp3&quot;&gt;&gt;
-			&lt;&lt;cacheaudio &quot;flashlightsound&quot; &quot;assets\sounds\flashlight.mp3&quot;&gt;&gt;
-			&lt;&lt;cacheaudio &quot;dancingshamansound&quot; &quot;assets\sounds\dancing-shaman-laugh.mp3&quot;&gt;&gt;
-			&lt;&lt;cacheaudio &quot;firewalkingsound&quot; &quot;assets\sounds\fire-walking.mp3&quot;&gt;&gt;
-			&lt;&lt;cacheaudio &quot;teamrewindsound&quot; &quot;assets\sounds\team-rewind-credits.mp3&quot;&gt;&gt;
+			&lt;&lt;cacheaudio &quot;mainsound&quot; &quot;assets/sounds/fire-sparks.mp3&quot;&gt;&gt;
+			&lt;&lt;cacheaudio &quot;walkingsound&quot; &quot;assets/sounds/walking-in-a-cave.mp3&quot;&gt;&gt;
+			&lt;&lt;cacheaudio &quot;watersound&quot; &quot;assets/sounds/cave-dripping-water.mp3&quot;&gt;&gt;
+			&lt;&lt;cacheaudio &quot;flashlightsound&quot; &quot;assets/sounds/flashlight.mp3&quot;&gt;&gt;
+			&lt;&lt;cacheaudio &quot;dancingshamansound&quot; &quot;assets/sounds/dancing-shaman-laugh.mp3&quot;&gt;&gt;
+			&lt;&lt;cacheaudio &quot;firewalkingsound&quot; &quot;assets/sounds/fire-walking.mp3&quot;&gt;&gt;
+			&lt;&lt;cacheaudio &quot;teamrewindsound&quot; &quot;assets/sounds/team-rewind-credits.mp3&quot;&gt;&gt;
+			&lt;&lt;cacheaudio &quot;backpacksound&quot; &quot;assets/sounds/opening-backpack.mp3&quot;&gt;&gt;
+			&lt;&lt;cacheaudio &quot;writingsound&quot; &quot;assets/sounds/writing.mp3&quot;&gt;&gt;
+			&lt;&lt;cacheaudio &quot;objectplacingsound&quot; &quot;assets/sounds/object-placing.mp3&quot;&gt;&gt;
+			&lt;&lt;cacheaudio &quot;wrongsound&quot; &quot;assets/sounds/wrong-answer.mp3&quot;&gt;&gt;
+			&lt;&lt;cacheaudio &quot;rightsound&quot; &quot;assets/sounds/correct-answer.mp3&quot;&gt;&gt;
+
 		</tw-passagedata>
 	</tw-storydata>
 	<!--End Passages!!!-->
