@@ -94,7 +94,7 @@ Our approach was to merge **archaeological aesthetics** with **modern interactio
 
 ## 📘 **Design Brief**
 
-Read the complete design document 👉<a href="design_brief.html" target="_blank">**here**</a>!
+Read the complete design document 👉<a href="https://imd-rewind.github.io/DearOutsider/design_brief.html" target="_blank">**here**</a>!
 
 ---
 
