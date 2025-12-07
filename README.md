@@ -53,13 +53,60 @@ Twine |
 Figma
 
 ---
-<!--
-## 🎬 **Screenshots & Media**
+## 🎬 Screenshots & Media
 
-> *(Add your real images here)*
+<details>
+  <summary>📸 Click to open the Screenshot Gallery</summary>
 
-<img src="assets/screenshots/screen1.png" width="500"/>  
-<img src="assets/screenshots/screen2.png" width="500"/>  -->
+  <br>
+
+  ### 🖼️ Gallery Preview
+
+  <p float="left">
+    <img src="Canva/initial page - Fahmy.png" width="32%" />
+    <img src="Canva/Start Walking 1.png" width="32%" />
+    <img src="Canva/objects found _ _Discover The Other Findings 1.png" width="32%" />
+  </p>
+
+  <p float="left">
+    <img src="assets/img/DearOutsider_Diagram.jpg" width="32%" />
+    <img src="Twine/TwinePassages.png" width="32%" />
+    <img src="Figma/dear-outsider-prototype-interactions.png" width="32%" />
+  </p>
+
+  ---
+
+  ### 📖 Full Carousel
+
+  **Slide 1**  
+  <img src="Canva/initial page - Fahmy.png" width="700"/>
+
+  ---
+
+  **Slide 2**  
+  <img src="Canva/Start Walking 1.png" width="700"/>
+
+  ---
+
+  **Slide 3**  
+  <img src="Canva/objects found _ _Discover The Other Findings 1.png" width="700"/>
+
+  ---
+
+  **Slide 4**  
+  <img src="assets/img/DearOutsider_Diagram.jpg" width="700"/>
+
+  ---
+
+  **Slide 5**  
+  <img src="Twine/TwinePassages.png" width="700"/>
+
+  ---
+
+  **Slide 6**  
+  <img src="Figma/dear-outsider-prototype-interactions.png" width="700"/>
+
+</details>
 
 ---
 
