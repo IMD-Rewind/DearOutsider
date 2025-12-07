@@ -138,7 +138,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 /* ---------------------------------------- */
 
 .story-img {
-    width: 500px;
+    width: 1100px;
     max-width: 100%;
     height: auto;
     display: block;
@@ -163,10 +163,13 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
     z-index: 200 !important; /* just to be safely above bg */
 }
 
+video {
+	width: 1100px;
+}
+
 /* The actual video */
 .passage-video {
     width: 80%;
-    max-width: 900px;
     border-radius: 12px;
     display: block;
     box-shadow: 0 0 20px rgba(0,0,0,0.6);
@@ -180,8 +183,6 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
     z-index: 10;
     margin-top: 10px;
     text-align: left;
-    max-width: 900px;
-    margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
 }
@@ -200,6 +201,9 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
     display: block;
 }
 
+.orange {
+	color:#ff7f50;
+}
 
 </style>
 
@@ -221,70 +225,63 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
     <tw-storydata name="DearOutsiderStory" startnode="1" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="2F6831FD-984B-462C-9FC2-5086EA895D5A" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script>
         <!--Passage 1-->
-		<tw-passagedata pid="1" name="Start" tags="" position="900,100" size="100,100";>
-			&lt;&lt;audio teamrewindsound stop&gt;&gt;
+		<tw-passagedata pid="1" name="Start" tags="" position="900,100" size="100,100">
             ''Porto Badisco, Otranto''
             ''February 1st, XXXX''
 
             [[Continue]]
+			
+			&lt;&lt;audio teamrewindsound stop&gt;&gt;
         </tw-passagedata> 
 
         <!--Passage 2-->
+		&lt;!--put video 1 AI: metti in assets videos--&gt;
 		<tw-passagedata pid="2" name="Continue" tags="" position="1650,475" size="100,100">
-			&lt;!--put video 1 AI: metti in assets videos--&gt;
-            
-                
-				&lt;video controls playsinline&gt;
-					&lt;source src=&quot;assets/videos/video-ai-starting-point.mp4&quot; type=&quot;video/mp4&quot;&gt;
-				&lt;/video&gt;
-				
+			&lt;video controls playsinline&gt;
+			&lt;source src=&quot;assets/videos/video-ai-starting-point.mp4&quot; type=&quot;video/mp4&quot;&gt;
+			&lt;/video&gt;
 			&lt;div class=&quot;passage-text&quot;&gt;
-				You are a ''speleologist'', a specialist of caves and you love exploring them.
-				This time you are in Otranto doing research on the land with four colleagues.&lt;br&gt;&lt;br&gt;
-				While examining the morphological characteristics, suddenly, the sky turns black and the earth starts trembling.
-				A crack is forming under your feet and quickly turns into a hole...  
-				There&#39;s a purple smoke coming out of it.&lt;br&gt;&lt;br&gt;
-				You and your colleagues fall into the hole and pass out.&lt;br&gt;&lt;br&gt;
+			You are a ''speleologist'', a specialist of caves and you love exploring them.
+			This time you are in Otranto doing research on the land with four colleagues.&lt;br&gt;
+			While examining the morphological characteristics, suddenly, the sky turns black and the earth starts trembling.
+			A crack is forming under your feet and quickly turns into a hole...  
+			There&#39;s a purple smoke coming out of it.&lt;br&gt;
+			You and your colleagues fall into the hole and pass out.
 
-				[[Go on]]
+			[[Go on]]
 			&lt;/div&gt;
 		</tw-passagedata>
 
 		<!--Passage 3-->
-		<tw-passagedata pid="3" name="Go on" tags="" position="600,250" size="100,100">
-			<!--put water drops inside a cave sound: download from freesounds-->
-			&lt;&lt;audio watersound play&gt;&gt;
-
+		<!--put water drops inside a cave sound: download from freesounds-->
+		<tw-passagedata pid="3" name="Go on" tags="" position="600,250" size="100,100";>
 			You hear water dripping somewhere and regain your consciousness inside a humid and pitch black place.
 
-			You can&#39;t see anything and worriedly ask for your colleagues:
+			@@.orange;You@@ can&#39;t see anything and worriedly ask for your colleagues:
 			&lt;i&gt;« Guys are you here? Are you okay? »&lt;/i&gt;
 
-			Speleologist 1:
+			@@.orange;Speleologist 1:@@
 			&lt;i&gt;« Yeah... I think I&#39;m okay even though my body is aching all over! »&lt;/i&gt;
 
-			Speleologist 2:
+			@@.orange;Speleologist 2:@@
 			&lt;i&gt;« Still alive here too! »&lt;/i&gt;
 
-			Speleologist 3:
+			@@.orange;Speleologist 3:@@
 			&lt;i&gt;« Yeah, I&#39;m okay but what was that? »&lt;/i&gt;
 
-			Speleologist 4:
+			@@.orange;Speleologist 4:@@
 			&lt;i&gt;« I would feel better after finding my flashlight! »&lt;/i&gt;
 
-			You:
+			@@.orange;You:@@
 			&lt;i&gt;« Wait, I had mine in my hands before... Where did it go? Ah, found it! »&lt;/i&gt;
 
-			<!--sound of flashlight when clicking on the button below-->
-
 			[[Switch on your flashlight]]
+
+			&lt;&lt;audio watersound play&gt;&gt;
 		</tw-passagedata>
 
-		<!--Passage 4-->
-		<tw-passagedata pid="4" name="Switch on your flashlight" tags="" position="775,250" size="100,100">
-			<!--if sound of flashlight can't be put on button then put at the start of this scene-->
-            &lt;&lt;audio flashlightsound play&gt;&gt;
-			<!--img-->
+		<!--Passage 4 w/ img-->
+		<tw-passagedata pid="4" name="Switch on your flashlight" tags="" position="775,250" size="100,100";>
 			&lt;div&gt;
             	&lt;img class="story-img" src=&quot;assets\img\hero-bg.png&quot;&gt;
             &lt;/div&gt;
@@ -296,61 +293,64 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 			As excited speleologists, you start diving deeper into the cave.
 
 			[[Start Walking]]
+
+			<!--if sound of flashlight can't be put on button then put at the start of this scene-->
+            &lt;&lt;audio flashlightsound play&gt;&gt;
 		</tw-passagedata>
 		
-		<!--Passage 5-->
-		<tw-passagedata pid="5" name="Start Walking" tags="" position="975,250" size="100,100">
-			<!--put footsteps inside a cave sound-->
-			&lt;&lt;audio flashlightsound stop&gt;&gt;
-			&lt;&lt;audio walkingsound play&gt;&gt;
-
+		<!--Passage 5 w/ imgs-->
+		<tw-passagedata pid="5" name="Start Walking" tags="" position="975,250" size="100,100";>
 			While walking you start speculating on the meanings of the drawings and what they are actually portraying.
 			<!--img-->
 			&lt;div&gt;
             	&lt;img class="story-img" src=&quot;Canva\Start Walking 1.png&quot;&gt;
             &lt;/div&gt;
 
-			Speleologist 1:
+			@@.orange;Speleologist 1:@@
 			&lt;i&gt;« Hey, I think I see some drawings of people here... It seems like they have a bow in their hands so maybe they are hunting? »&lt;/i&gt;
 
-			Speleologist 2:
+			@@.orange;Speleologist 2:@@
 			&lt;i&gt;« I think you are right!! Don&#39;t these look like animals running from them?! »&lt;/i&gt;
 			<!--img-->
 			&lt;div&gt;
             	&lt;img class="story-img" src=&quot;Canva\Start Walking 2.png&quot;&gt;
             &lt;/div&gt;
 
-			Speleologist 3:
+			@@.orange;Speleologist 3:@@
 			&lt;i&gt;« Guys, I see some handprints on this wall! »&lt;/i&gt;
 
-			Speleologist 4:
+			@@.orange;Speleologist 4:@@
 			&lt;i&gt;« Wow there are soo many. It feels like someone would suddenly show up out of nowhere! »&lt;/i&gt;
 
-			While your colleagues make guesses about the drawings, you walk a bit further in and call the others:
+			While your colleagues make guesses about the drawings, you walk a bit further in and @@.orange;call the others:@@
 			&lt;i&gt;« Hey guys, there are more!! There is a really peculiar one here! »&lt;/i&gt;
 			<!--img-->
 			&lt;div&gt;
             	&lt;img class="story-img" src=&quot;Canva\Start Walking 3.png&quot;&gt;
             &lt;/div&gt;
 
-			Speleologist 1:
+			@@.orange;Speleologist 1:@@
 			&lt;i&gt;« It looks like a monkey! »&lt;/i&gt;
 
-			Speleologist 2:
+			@@.orange;Speleologist 2:@@
 			&lt;i&gt;« Isn&#39;t that... Just a dancing person? »&lt;/i&gt;
 
-			Speleologist 3:
+			@@.orange;Speleologist 3:@@
 			&lt;i&gt;« Well, there are other drawings over there! Let&#39;s take a look! »&lt;/i&gt;
 
-			You whisper to yourself:
+			@@.orange;You@@ whisper to yourself:
 			&lt;i&gt;« A dancing person, huh?... Could it be a dancing &lt;b&gt;Shaman&lt;/b&gt; maybe? It is pretty common to find paintings depicting a Shaman inside caves, since they were important figures for ancient communities because of their role as ritual leaders. That would also explain the... »&lt;/i&gt;
 
-			You get interrupted by Speleologist 4:
+			You get interrupted by @@.orange;Speleologist 4:@@
 			&lt;i&gt;« Hey! What are you still doing there, all alone?! Come here or you&#39;re gonna get lost! »&lt;/i&gt;
 
 			You turn around and catch up to your colleagues.
 
 			[[Keep Exploring]]
+
+			<!--put footsteps inside a cave sound-->
+			&lt;&lt;audio flashlightsound stop&gt;&gt;
+			&lt;&lt;audio walkingsound play&gt;&gt;
 		</tw-passagedata>
 		
 		<!--Passage 6-->
