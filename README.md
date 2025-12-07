@@ -53,14 +53,14 @@ Twine |
 Figma
 
 ---
-## 🎬 Screenshots
+## 🖼️ Screenshots
 
 <details>
   <summary>📸 Click to open the Screenshot Gallery</summary>
 
   <br>
 
-  ### 🖼️ Preview
+  ### Preview
 
   <p float="left">
     <img src="Canva/initial page - Fahmy.png" width="32%" />
