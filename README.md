@@ -7,7 +7,7 @@
 <img src="assets/img/hero-bg.png" width="900"/>
 
 
-A **Discovering Game Experience** created for the **DHDK** course <a href="https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue?codiceMateria=B5059&annoAccademico=2024&codiceCorso=9224&single=True&search=True" target="_blank">**Digital Heritage and Multimedia (2024/2025)**</a> taught by Professors <a href="https://www.unibo.it/sitoweb/chiara.tartarini">**Chiara Tartarini**</a> and <a href="https://www.unibo.it/sitoweb/sofia.pescarin/">**Sofia Pescarin**</a>.
+A **Discovering Game Experience** created for the **DHDK** course <a href="https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue?codiceMateria=B5059&annoAccademico=2024&codiceCorso=9224&single=True&search=True" target="_blank">**Digital Heritage and Multimedia (2024/2025)**</a> taught by Professors <a href="https://www.unibo.it/sitoweb/chiara.tartarini" target="_blank">**Chiara Tartarini**</a> and <a href="https://www.unibo.it/sitoweb/sofia.pescarin/" target="_blank">**Sofia Pescarin**</a>.
 
 ---
 
@@ -38,9 +38,9 @@ Designed as an immersive *visually-driven journey*, the project blends:
 
 ## 🚀 **Play the Experience**
 
-Enjoy the narration here 👉**<a href="https://imd-rewind.github.io/DearOutsider/DearOutsiderStory.html">Twine</a>**.
+Enjoy the narration here 👉**<a href="https://imd-rewind.github.io/DearOutsider/DearOutsiderStory.html" target="_blank">Twine</a>**.
  
-Enjoy the game UI here 👉**<a href="https://www.figma.com/proto/5uYv1VuZP5wqdA3bpMPLK4/Dear-Outsider-Prototype?node-id=213-92&p=f&t=IzIcI751wPWAY1t8-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=213%3A92">Figma</a>**.
+Enjoy the game UI here 👉**<a href="https://www.figma.com/proto/5uYv1VuZP5wqdA3bpMPLK4/Dear-Outsider-Prototype?node-id=213-92&p=f&t=IzIcI751wPWAY1t8-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=213%3A92" target="_blank">Figma</a>**.
 
 ---
 
@@ -79,9 +79,9 @@ Figma
 
 ## 👥 **Team REWIND**
 
-<a href="https://github.com/Fahmyrose/">Fahmida Islam </a>  |
-<a href="https://github.com/maridematteis">Maria De Matteis</a>  |
-<a href="https://github.com/martinamrc">Martina Marchesi</a>
+<a href="https://github.com/Fahmyrose/" target="_blank">Fahmida Islam </a>  |
+<a href="https://github.com/maridematteis" target="_blank">Maria De Matteis</a>  |
+<a href="https://github.com/martinamrc" target="_blank">Martina Marchesi</a>
 
 ---
 
