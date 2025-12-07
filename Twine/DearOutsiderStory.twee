@@ -1,0 +1,601 @@
+:: StoryTitle
+DearOutsiderStory
+
+
+:: StoryData
+{
+  "ifid": "2F6831FD-984B-462C-9FC2-5086EA895D5A",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Restart",
+  "zoom": 0.6
+}
+
+
+:: 1 {"position":"1550,850","size":"100,100"}
+
+			That's a mammut! Maybe you are getting confused?
+
+			Try Again:
+			<div>
+            	<img class="story-img" src="Canva\3) AI quiz game _ _Listen To The Hunters 2.png">
+            </div>
+			[[1]]   [[2]]   [[3]]   [[4]]
+
+			<<audio wrongsound play>>
+			<<audio rightsound stop>>
+		
+
+
+:: 2 {"position":"1775,700","size":"100,100"}
+
+			A horse? Are you sure?
+
+			Try Again:
+			<div>
+            	<img class="story-img" src="Canva\3) AI quiz game _ _Listen To The Hunters 2.png">
+            </div>
+			[[1]]   [[2]]   [[3]]   [[4]]
+
+			<<audio wrongsound play>>
+			<<audio rightsound stop>>
+		
+
+
+:: 3 {"position":"1375,550","size":"100,100"}
+
+			Yes! The hunters were hunting deers!
+			<div>
+            	<img class="story-img" src="Canva\Start Walking 1.png">
+            </div>
+			The @@.orange;hunters@@ continue:
+			<i>« Now… now I remember perfectly! The area was full of deers! We painted so many of them on the walls of the cave, while in the flickering firelight we recounted our feats, so that they would be passed down from generation to generation. Yes… ''Deer hunting'' was a fundamental activity for us: a ritual, a test of courage, a way to honor the Great Mother and ensure the prosperity of our group. »</i>
+
+			After the hunters have finished telling their story, the @@.orange;Shaman@@ says:
+			<i>« I am glad I brought you here. I have called you through time so that someone, in the far future, might remember the history of my people and of this place of worship.
+
+			You paid attention to our story even before I woke up. I know that speleologists like adventures and I also know that one of your goals is to protect the past hidden in the uderground. You have helped us tell our own story and have passed all of my tests. »</i>
+
+			@@.orange;He@@ continues:
+			<i>« To show my appreciation, I would like you to put your handprints alongside the ones of our people. We will remember you the same way you will remember us. Thank you,''Dear Friends''. »</i>
+
+			[[Add your Handprint]]
+
+			<<audio wrongsound stop>>
+			<<audio rightsound play>>
+			<<audio mainsound play>>
+		
+
+
+:: 4 {"position":"1200,900","size":"100,100"}
+
+			That's a goat!  
+
+			Try Again:
+			<div>
+            	<img class="story-img" src="Canva\3) AI quiz game _ _Listen To The Hunters 2.png">
+            </div>
+			[[1]]   [[2]]   [[3]]   [[4]]
+
+			<<audio wrongsound play>>
+			<<audio rightsound stop>>
+		
+
+
+:: Add your Handprint {"position":"1625,450","size":"100,100"}
+
+			You and your colleagues add your handprints:
+
+			<video controls playsinline>
+				<source src="assets\videos\handprint-AI.mp4" type="video/mp4">
+			</video>
+
+			[[End of the Story]]
+
+			<<audio wrongsound stop>>
+			<<audio rightsound stop>>
+		
+
+
+:: Ask for Hints {"position":"400,450","size":"100,100"}
+
+			@@.orange;Speleologist 1@@ asks the Shaman:
+			<i>« What do you mean when you say that the offerings are near us? »</i>
+
+			The @@.orange;Shaman@@ replies:
+			<i>« Where do you keep your tools? »</i>
+
+			@@.orange;Speleologist 4@@ says:
+			<i>« Ah! The backpack! »</i>
+
+			[[Open your Backpack]]
+		
+
+
+:: Choose text 1 {"position":"1075,525","size":"100,100"}
+
+			<div>
+            	<img class="story-img" src="Canva\UI wrong choice from game 1) _ _Choose Text 1.png">
+            </div>
+			This choice doesn't seem to be very in line with the Shaman's story. Try to think about the context of the cave and Neolithic history, what do you think he would like to tell you?
+
+			@@.orange;Shaman:@@
+			<i>« Are you sure this is correct? Maybe you could try another time. »</i>
+
+			Choose another option:
+
+			<i>« … Becomes a high-quality cultural asset — ideal for enhancing the region and promoting sustainable tourism. Would you like my answer to be more detailed, more concise, or more relevant to your visit to the site? »</i>
+			[[Choose text 1]]
+
+			<i>« … Unites us to our origin, for every painting and every object here tells who we were, how we lived, and what sacred bonds connected us to the Great Mother. »</i>
+			[[Choose text 2]]
+
+			<<audio rightsound stop>>
+			<<audio wrongsound play>>
+			<<audio mainsound play>>
+		
+
+
+:: Choose text 2 {"position":"725,625","size":"100,100"}
+
+			<div>
+            	<img class="story-img" src="Canva\UI correct choice from game 1) _ _Choose Text 2.png">
+            </div>
+			@@.orange;Shaman:@@
+			<i>« Yes! Those are the words I was looking for. And so, as I was telling you all... »</i>
+
+			Great choice! The Shaman seems to have regained his memories and can now get back to the telling of his story!
+
+			<i>« [...] And now I will show you what … Unites us to our origin, for every painting and every object here tells who we were, how we lived, and what sacred bonds connected us to the Great Mother. »</i>
+
+			[[Keep Listening]]
+
+			<<audio wrongsound stop>>
+			<<audio rightsound play>>
+			<<audio mainsound play>>
+		
+
+
+:: Continue {"position":"600,150","size":"100,100"}
+
+			<video controls playsinline>
+			<source src="assets/videos/video-ai-starting-point.mp4" type="video/mp4">
+			</video>
+			<div class="passage-text">
+			You are a ''speleologist'', a specialist of caves and you love exploring them.
+			This time you are in Otranto doing research on the land with four colleagues.<br>
+			While examining the morphological characteristics, suddenly, the sky turns black and the earth starts trembling.
+			A crack is forming under your feet and quickly turns into a hole...  
+			There's a purple smoke coming out of it.<br>
+			You and your colleagues fall into the hole and pass out.
+
+			[[Go on]]
+			</div>
+		
+
+
+:: Discover Your Object {"position":"225,575","size":"100,100"}
+
+			<div>
+            	<img class="story-img" src="Canva\pintadera explained + human shaman _ _Discover Your Object.png">
+            </div>
+			[[Discover the other Findings]]
+
+			<<audio backpacksound stop>>
+			<<audio mainsound play>>
+		
+
+
+:: Discover the other Findings {"position":"150,825","size":"100,100"}
+
+			<div>
+            	<img class="story-img" src="Canva\objects found _ _Discover The Other Findings 1.png">
+            </div>
+			You ask your colleagues what they have found and annotate everything in your diary:
+			<div>
+            	<img class="story-img" src="Canva\diary _ _Discover The Other Findings 2.png">
+            </div>
+			[[Speak to the Shaman]]
+
+			<<audio mainsound stop>>
+			<<audio writingsound play>>
+		
+
+
+:: Done Exploring {"position":"1200,250","size":"100,100"}
+
+			<div>
+            	<img class="story-img" src="Canva\(Fahmy) __Done Exploring__.gif">
+            </div>
+			After you and your colleagues are done exploring the cave, a glow appears behind you; leaving you with no choice but to turn around and find its source. 
+
+			You see the pictogram you interpreted as a dancing Shaman actually dancing on the wall. The air feels heavy again, the purple smoke comes back alongside some peculiar scents.
+
+			After the disappearing smoke clears your vision; you see a fire pit below the wall and it seems like there is someone now, in front of it, mumbling something.
+
+			@@.orange;Speleologist 4:@@
+			<i>« Oh no! Someone really did appear! I was joking when I said that! »</i>
+
+			You and your colleagues are scared but decide to get closer.
+
+			[[Get Closer]]
+			
+			<<audio dancingshamansound play>>
+			
+			<<audio mainsound play>>
+			
+		
+
+
+:: Done Placing {"position":"750,825","size":"100,100"}
+
+			<div>
+            	<img class="story-img" src="Canva\Start Walking 1.png">
+            </div>
+			The fire gets stronger and the Shaman invites you to sit around it. 
+
+			From deep inside the cave, three young ''hunters'', like the ones you saw on the walls before, appear.
+
+			They are here to thank the Great Mother for the successful hunting and turn to you.
+
+			[[Listen to the Hunters]]
+
+			<<audio objectplacingsound stop>>
+			<<audio firewalkingsound play>>
+		
+
+
+:: End of the Story {"position":"1375,175","size":"100,100"}
+
+			Hi! @@.orange;We are Team Rewind!@@ Thank you for discovering the ''Deer Cave'' with us!
+			Did you like it? Please light the flames below and leave a comment if you want, so we can develop this project better in the future!
+			<div>
+            	<img class="story-img" src="assets/img/Feedback.png">
+            </div>
+			Don't forget to tell your ''Dear Friends'' about it! And keep discovering the world!
+			Team Rewind will head for the next discovery too! 
+			See you there!
+
+			<a href="index.html#home" target="_blank">End the Experience</a> 
+			[[Restart]]
+
+			<<audio mainsound stop>>
+			<<audio teamrewindsound play>>
+		
+
+
+:: Get Closer {"position":"1325,400","size":"100,100"}
+
+			While getting closer to the fire pit, you notice the dancing pictogram is missing and the person is right in front of it.
+			<div>
+            	<img class="story-img" src="Canva\Shaman _ _Get Closer.png">
+            </div>
+			@@.orange;Speleologist 4@@ reacts:
+			<i>« FIRST REACTION: SHOCK! »</i>
+
+			@@.orange;You:@@
+			<i>« Don't tell me... That's actually.... The Shaman?! »</i>
+
+			@@.orange;The person@@ stops what he was doing and starts talking to you and your colleagues:
+
+			<i>« Dear Outsiders, you have entered the womb of the earth because I have summoned you across distant ages. The Great Mother, she who gives life and takes it back, has heard my prayer: she has allowed you to reach this ancient sanctuary, a crossroads for different peoples of the Mediterranean.
+
+			I am the ''Shaman'' who watches over these paintings, guardian of our rites and our prayers.
+
+			Now that you are here, into the heart of the earth, listen to what my people have left in these signs: the past wishes to speak…
+
+			From these galleries unfold our ancient steps…
+
+			Every corridor holds a fragment of our life: the hunting expeditions, the initiation rites of the young symbolized by the hands imprinted on the rock, and the spirit of our communities, always eager to give thanks and ask for protection from the Great Mother.
+
+			Here, in the shadows and in the silence, every sign is a tale, every figure a bond between the visible world and that of the spirits.
+			And now I will show you what… What… »</i>
+
+			The Shaman stops.
+
+			His gaze grows uncertain, as if, suddenly, a mysterious force had clouded his mind.
+			<i>« I… I don’t remember… How does my sentence continue? »</i>
+
+			The walls flicker in the firelight.
+
+			The Shaman is having a hard time speaking. It feels like there is a force stopping him from telling his story.
+
+			[[Help the Shaman]]
+
+			<<audio dancingshamansound stop>>
+			<<audio mainsound stop>>
+			
+			<<audio firewalkingsound play>>
+		
+
+
+:: Go on {"position":"275,200","size":"100,100"}
+
+			You hear water dripping somewhere and regain your consciousness inside a humid and pitch black place.
+
+			@@.orange;You@@ can't see anything and worriedly ask for your colleagues:
+			<i>« Guys are you here? Are you okay? »</i>
+
+			@@.orange;Speleologist 1:@@
+			<i>« Yeah... I think I'm okay even though my body is aching all over! »</i>
+
+			@@.orange;Speleologist 2:@@
+			<i>« Still alive here too! »</i>
+
+			@@.orange;Speleologist 3:@@
+			<i>« Yeah, I'm okay but what was that? »</i>
+
+			@@.orange;Speleologist 4:@@
+			<i>« I would feel better after finding my flashlight! »</i>
+
+			@@.orange;You:@@
+			<i>« Wait, I had mine in my hands before... Where did it go? Ah, found it! »</i>
+
+			[[Switch on your flashlight]]
+
+			<<audio watersound play>>
+		
+
+
+:: Help the Shaman {"position":"850,400","size":"100,100"}
+
+			For some reason the @@.orange;Shaman@@ doesn't seem to remember the words to his story.
+
+			<i>« I... I don't remember... How does my sentence continue? »</i>
+			<div>
+            	<img class="story-img" src="Canva\1) dialogue choice _ _Help the Shaman.png">
+            </div>
+			Help him by choosing the correct option:
+
+			<i>« … Becomes a high-quality cultural asset — ideal for enhancing the region and promoting sustainable tourism. Would you like my answer to be more detailed, more concise, or more relevant to your visit to the site? »</i>
+			[[Choose text 1]]
+
+			<i>« … Unites us to our origin, for every painting and every object here tells who we were, how we lived, and what sacred bonds connected us to the Great Mother. »</i>
+			[[Choose text 2]]
+
+			<<audio firewalkingsound stop>>
+			<<audio mainsound play>>
+		
+
+
+:: Keep Exploring {"position":"950,275","size":"100,100"}
+
+			<<audio walkingsound stop>>
+			
+			<video controls playsinline>
+				<source src="assets\videos\dear-cave-discovery.mp4" type="video/mp4">
+			</video>
+
+			[[Done Exploring]]
+		
+
+
+:: Keep Listening {"position":"625,450","size":"100,100"}
+
+			The @@.orange;Shaman@@ says:
+			<i>« Once you have reached this place, it is customary to make offerings to ingratiate yourselves with divine favors. </i>
+
+			<i>You also have to do the same if you want to stay here and uncover our story. 
+			I know this is what you most deem valuable as speleologists, right? »</i>
+
+			@@.orange;Speleologist 4@@ whispers to You:
+			<i>« I guess he really is a Shaman, huh... We didn't even have a chance to introduce ourselves yet and he already knows who we are and our profession. »</i>
+
+			The @@.orange;Shaman@@ continues:
+			<i>« Each of you have to make an offering. Since I brought you here, the object that you will offer is near you. Search for it. »</i>
+
+			[[Look Around]]
+			[[Ask for Hints]]
+
+			<<audio mainsound stop>>
+
+			<<audio wrongsound stop>>
+			<<audio rightsound stop>>
+
+			<<audio mainsound play>>
+		
+
+
+:: Listen to the Hunters {"position":"975,750","size":"100,100"}
+
+			The hunters start talking to you.
+
+			@@.orange;Hunter 1:@@ 
+			<i>« Greetings, Outsiders. We are here to pay tribute to the Goddess for our last hunt. It has been a long day, one that began when the sun was still low on the horizon. We followed the tracks carefully, crossing through the forest and then the clearing that leads toward the river. »</i>
+
+			@@.orange;Hunter 2:@@
+			<i>« The ground was damp, the footprints were fresh. We knew we were close. We moved each step in silence, as we were taught, listening to every breath of the earth… and every whisper of the wind through the leaves. »</i>
+
+			@@.orange;Hunter 3:@@
+			<i>« At one point, we saw the animal silhouetted against the morning light… It was…  »</i>
+
+			He stops and looks at the others, hesitant.
+
+			@@.orange;Hunter 1:@@
+			<i>« Yes… it was… »</i>
+
+			@@.orange;Hunter 2:@@ 
+			<i>« I can’t clearly remember anymore…  »</i>
+
+			@@.orange;Hunter 3:@@
+			<i>« Let’s look at the paintings. The truth is there.  »</i>
+
+			The hunters and the speleologists approach the pictograms.
+
+			@@.orange;Hunter 1:@@
+			<i>« These images are not as we saw them last time.  »</i>
+
+			@@.orange;Hunter 3:@@
+			<i>« Or perhaps… It is we who no longer remember?  »</i>
+
+			They turn to the speleologists, with seriousness and an almost ritual tone.
+
+			@@.orange;Hunter 1:@@
+			<i>« Stranger, you have new eyes. Perhaps you can see what we can no longer distinguish. Help us rediscover the truth of our hunt.  »</i>
+			<div>
+            	<img class="story-img" src="Canva\3) AI quiz game _ _Listen To The Hunters 1.png">
+            </div>
+			The paintings on the walls have changed. The @@.orange;Shaman@@ smirks and says:
+			<i>« The hunters don't seem to recognize which animal they were hunting... »</i>
+
+			Recall the wall paintings you have seen in the beginning and help them recognize the correct animal.
+			<div>
+            	<img class="story-img" src="Canva\3) AI quiz game _ _Listen To The Hunters 2.png">
+            </div>
+			What were they hunting? Choose a pictogram:
+
+			[[1]]   [[2]]   [[3]]   [[4]]
+
+			<<audio firewalkingsound stop>>
+			<<audio mainsound play>>
+		
+
+
+:: Look Around {"position":"500,675","size":"100,100"}
+
+			You and your colleagues search around but can't understand what the Shaman means when he says that you already have the offerings with you.
+
+			[[Ask for Hints]]
+		
+
+
+:: Open your Backpack {"position":"150,400","size":"100,100"}
+
+			<div>
+            	<img class="story-img" src="Canva\backpack + items _ _Ask For Hints.png">
+            </div>
+			You and your colleagues do as the Shaman says and find something glowing inside.
+			<div>
+            	<img class="story-img" src="Canva\selected object info (after touching the cell) _ _Open Your Backpack.png">
+            </div>
+
+			[[Discover Your Object]]
+
+			<<audio backpacksound play>>
+		
+
+
+:: Place the Items {"position":"550,850","size":"100,100"}
+
+			<div>
+            	<img class="story-img" src="Canva\2) puzzle game _ _Place The Items.png">
+            </div>
+			[[Done Placing]]
+
+			<<audio objectplacingsound play>>
+		
+
+
+:: Restart {"position":"900,100","size":"100,100"}
+
+            ''Porto Badisco, Otranto''
+            ''February 1st, XXXX''
+
+            [[Continue]]
+			
+			<<audio teamrewindsound stop>>
+        
+
+
+:: Speak to the Shaman {"position":"350,800","size":"100,100"}
+
+			@@.orange;You:@@
+			<i>« We have found the offerings. Here. »</i>
+
+			The @@.orange;Shaman@@ replies:
+			<i>« You have indeed. But you should not give them to me.
+
+			Look closely around the fire pit. You will find pits of the same number as the offerings. Put your findings in the pits, but be careful: each offering has it's own pit. »</i>
+
+			[[Place the Items]]
+
+			<<audio writingsound stop>>
+			<<audio mainsound play>>
+		
+
+
+:: Start Walking {"position":"725,250","size":"100,100"}
+
+			While walking you start speculating on the meanings of the drawings and what they are actually portraying.
+			<div>
+            	<img class="story-img" src="Canva\Start Walking 1.png">
+            </div>
+			@@.orange;Speleologist 1:@@
+			<i>« Hey, I think I see some drawings of people here... It seems like they have a bow in their hands so maybe they are hunting? »</i>
+
+			@@.orange;Speleologist 2:@@
+			<i>« I think you are right!! Don't these look like animals running from them?! »</i>
+			<div>
+            	<img class="story-img" src="Canva\Start Walking 2.png">
+            </div>
+			@@.orange;Speleologist 3:@@
+			<i>« Guys, I see some handprints on this wall! »</i>
+
+			@@.orange;Speleologist 4:@@
+			<i>« Wow there are soo many. It feels like someone would suddenly show up out of nowhere! »</i>
+
+			While your colleagues make guesses about the drawings, @@.orange;you@@ walk a bit further in and call the others:
+			<i>« Hey guys, there are more!! There is a really peculiar one here! »</i>
+			<div>
+            	<img class="story-img" src="Canva\Start Walking 3.png">
+            </div>
+			@@.orange;Speleologist 1:@@
+			<i>« It looks like a monkey! »</i>
+
+			@@.orange;Speleologist 2:@@
+			<i>« Isn't that... Just a dancing person? »</i>
+
+			@@.orange;Speleologist 3:@@
+			<i>« Well, there are other drawings over there! Let's take a look! »</i>
+
+			@@.orange;You@@ whisper to yourself:
+			<i>« A dancing person, huh?... Could it be a dancing <b>Shaman</b> maybe? It is pretty common to find paintings depicting a Shaman inside caves, since they were important figures for ancient communities because of their role as ritual leaders. That would also explain the... »</i>
+
+			You get interrupted by @@.orange;Speleologist 4:@@
+			<i>« Hey! What are you still doing there, all alone?! Come here or you're gonna get lost! »</i>
+
+			You turn around and catch up to your colleagues.
+
+			[[Keep Exploring]]
+
+			
+			<<audio flashlightsound stop>>
+			<<audio walkingsound play>>
+		
+
+
+:: StoryInit {"position":"1725,225","size":"100,100"}
+
+			<<cacheaudio "mainsound" "assets/sounds/fire-sparks.mp3">>
+			<<cacheaudio "walkingsound" "assets/sounds/walking-in-a-cave.mp3">>
+			<<cacheaudio "watersound" "assets/sounds/cave-dripping-water.mp3">>
+			<<cacheaudio "flashlightsound" "assets/sounds/flashlight.mp3">>
+			<<cacheaudio "dancingshamansound" "assets/sounds/dancing-shaman-laugh.mp3">>
+			<<cacheaudio "firewalkingsound" "assets/sounds/fire-walking.mp3">>
+			<<cacheaudio "teamrewindsound" "assets/sounds/team-rewind-credits.mp3">>
+			<<cacheaudio "backpacksound" "assets/sounds/opening-backpack.mp3">>
+			<<cacheaudio "writingsound" "assets/sounds/writing.mp3">>
+			<<cacheaudio "objectplacingsound" "assets/sounds/object-placing.mp3">>
+			<<cacheaudio "wrongsound" "assets/sounds/wrong-answer.mp3">>
+			<<cacheaudio "rightsound" "assets/sounds/correct-answer.mp3">>
+
+		
+
+
+:: Switch on your flashlight {"position":"500,275","size":"100,100"}
+
+			<div>
+            	<img class="story-img" src="assets\img\hero-bg.png">
+            </div>
+
+			You and your colleagues stand up and find yourselves in front of some walls with paintings on them and quickly figure out that you landed in an underground cave. 
+
+			On the walls, there are geometrical shapes alongside figures that seem to portray humans and animals.
+
+			As excited speleologists, you start diving deeper into the cave.
+
+			[[Start Walking]]
+
+			
+            <<audio flashlightsound play>>
+		
